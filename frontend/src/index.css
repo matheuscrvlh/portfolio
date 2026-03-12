@@ -2,5 +2,9 @@
 
 :root {
   --color-white: #ffff;
-  --color-red: #1E40AF;
+  --color-blue-light: #9B81C4;
+  --color-blue-light2: #8218D8;
+  --color-blue-light3: #2A1253;
+  --color-blue-base: #17072C;
+  --color-blue-dark: #0E0615;
 }

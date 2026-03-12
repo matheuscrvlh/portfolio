@@ -1,17 +1,16 @@
 // DEPENDENCES
-import { BrowserRoutes, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // PAGES
-import Home from './pages/Home'
+import Home from './pages/Home.jsx'
 
-function App() {
+export default function App() {
   return (
-    <BrowserRoutes>
+    <BrowserRouter>
       <Routes>
         <Route path='/' element={<Home />} />
       </Routes>
-    </BrowserRoutes>
+    </BrowserRouter>
   )
 }
 
-export default App
