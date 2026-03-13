@@ -1,22 +1,28 @@
 // IMAGES
 import principal from "../assets/images/principal.png"
 
+// ICONS
+import instagram from "../assets/icons/instagram.png"
+import whatsapp from "../assets/icons/whatsapp.png"
+import github from "../assets/icons/github.png"
+import linkedin from "../assets/icons/linkedin.png"
+
 export default function Main() {
     return (
         <section className='flex justify-between items-center text-white p-[15%] h-dvh'>
             <div className='flex flex-col gap-2 '>
                 <h2 className='text-4xl font-semibold'>Olá, sou Matheus</h2>
-                <h1 className='text-(--color-blue-light) text-5xl font-bold'>Desenvolvedor Full-Stack</h1>
+                <h1 className='text-(--color-blue-light) text-6xl font-bold'>Desenvolvedor Full-Stack</h1>
                 <div>
                     <h3 className='text-xl'>Acredito que tecnologia bem aplicada transforma ideias em realidade.</h3>
                     <h3 className='text-xl'>Construo soluções que resolvem problemas e geram valor.</h3>
                 </div>
-                <div className='flex'>
+                <div className='flex gap-5 h-10 mt-4'>
                     <p className='
                         border border-(--color-blue-light2)
                         text-(--color-blue-light2)
-                        p-2 w-45 text-center
-                        rounded-full cursor-pointer mt-4
+                        p-2 w-45 h-10 text-center
+                        rounded-full cursor-pointer
                         bg-[linear-gradient(to_right,var(--color-blue-light2)_50%,transparent_50%)]
                         bg-size-[200%]
                         bg-right
@@ -26,8 +32,11 @@ export default function Main() {
                     '>
                         Serviços
                     </p>
-                    <div>
-                        <p>INSTA</p>
+                    <div className="flex gap-5 h-8 mt-auto mb-auto">
+                        <img src={instagram} alt="instagram" className='cursor-pointer'/>
+                        <img src={whatsapp} alt="whatsapp" className='cursor-pointer'/>
+                        <img src={github} alt="github" className='cursor-pointer'/>
+                        <img src={linkedin} alt="linkedin" className='cursor-pointer'/>
                     </div>
                 </div>
             </div>
