@@ -1,6 +1,10 @@
 export default function Navbar() {
     return (
-        <nav className='flex justify-between items-center bg-(--color-blue-dark)/1 text-white w-full h-20 pl-40 pr-40'>
+        <nav className='
+            bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) 
+            flex justify-between items-center bg-(--color-blue-dark)/1 
+            text-white w-full h-20 pl-40 pr-40
+        '>
             <p className='text-xl font-bold hover:text-(--color-blue-light) cursor-pointer transition'>MTHCODE</p>
             <div className='flex gap-7 items-center font-semibold'>
                 <p className='hover:text-(--color-blue-light) cursor-pointer transition'>Início</p>

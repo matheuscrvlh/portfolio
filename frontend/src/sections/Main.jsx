@@ -9,7 +9,7 @@ import linkedin from "../assets/icons/linkedin.png"
 
 export default function Main() {
     return (
-        <section className='flex justify-between items-center text-white p-[15%] h-dvh'>
+        <section className='bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) h-dvh flex justify-between items-center text-white p-[15%]'>
             <div className='flex flex-col gap-2 '>
                 <h2 className='text-4xl font-semibold'>Olá, sou Matheus</h2>
                 <h1 className='text-(--color-blue-light) text-6xl font-bold'>Desenvolvedor Full-Stack</h1>
@@ -33,10 +33,10 @@ export default function Main() {
                         Serviços
                     </p>
                     <div className="flex gap-5 h-8 mt-auto mb-auto">
-                        <img src={instagram} alt="instagram" className='cursor-pointer'/>
-                        <img src={whatsapp} alt="whatsapp" className='cursor-pointer'/>
-                        <img src={github} alt="github" className='cursor-pointer'/>
-                        <img src={linkedin} alt="linkedin" className='cursor-pointer'/>
+                        <img src={instagram} alt="instagram" className='cursor-pointer hover:scale-110 transition'/>
+                        <img src={whatsapp} alt="whatsapp" className='cursor-pointer hover:scale-110 transition'/>
+                        <img src={github} alt="github" className='cursor-pointer hover:scale-110 transition'/>
+                        <img src={linkedin} alt="linkedin" className='cursor-pointer hover:scale-110 transition'/>
                     </div>
                 </div>
             </div>

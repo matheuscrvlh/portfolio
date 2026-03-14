@@ -1,13 +1,15 @@
 import Navbar from "../components/Navbar"
 import Main from "../sections/Main"
 import Quality from "../sections/Quality"
+import Skills from "../sections/Skills"
 
 export default function Home() {
     return (
-        <main className='bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) min-h-screen'>
+        <main className='h-full'>
             <Navbar />
             <Main />
             <Quality />
+            <Skills />
         </main>
     )
 }
