@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@keyframes gradient {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 200%;
+  }
+}
+
 :root {
   --color-white: #ffff;
   --color-blue-light: #9B81C4;

@@ -9,13 +9,31 @@ import linkedin from "../assets/icons/linkedin.png"
 
 export default function Main() {
     return (
-        <section className='bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) h-dvh flex justify-between items-center text-white p-[15%]'>
+        <section
+            id='home'
+            className='bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) h-dvh flex justify-between items-center text-white p-[15%]'
+        >
             <div className='flex flex-col gap-2 '>
                 <h2 className='text-4xl font-semibold'>Olá, sou Matheus</h2>
-                <h1 className='text-(--color-blue-light) text-6xl font-bold'>Desenvolvedor Full-Stack</h1>
+                <h1 className='text-6xl font-bold'>
+                    <span className='text-(--color-blue-light)'>
+                        Desenvolvedor
+                    </span>{'  '}
+                    <span className='
+                        bg-linear-to-r 
+                        from-(--color-blue-light) 
+                        via-(--color-blue-light2) 
+                        to-(--color-blue-light)
+                        bg-size-[200%_200%]
+                        animate-[gradient_5s_ease-in-out_infinite]
+                        bg-clip-text text-transparent
+                    '>
+                        Full-Stack
+                    </span>
+                </h1>
                 <div>
-                    <h3 className='text-xl'>Acredito que tecnologia bem aplicada transforma ideias em realidade.</h3>
-                    <h3 className='text-xl'>Construo soluções que resolvem problemas e geram valor.</h3>
+                    <h3 className='text-xl text-white/80'>Acredito que tecnologia bem aplicada transforma ideias em realidade.</h3>
+                    <h3 className='text-xl text-white/80'>Construo soluções que resolvem problemas e geram valor.</h3>
                 </div>
                 <div className='flex gap-5 h-10 mt-4'>
                     <p className='
