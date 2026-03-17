@@ -28,7 +28,7 @@ export default function Navbar() {
             fixed
             border-b transition-all duration-300
             ${show 
-                ? "opacity-90 border-(--color-blue-light2)/20" 
+                ? "opacity-95 border-(--color-blue-light2)/20" 
                 : "opacity-100 border-transparent"
             }
         `}>
@@ -36,7 +36,7 @@ export default function Navbar() {
             <div className='flex gap-7 items-center font-semibold'>
                 <Link to='home' smooth='easeInOutCubic' duration={700} className='hover:text-(--color-blue-light) cursor-pointer transition'>Início</Link>
                 <Link to='about' smooth='easeInOutCubic' duration={700} href='#about' className='hover:text-(--color-blue-light) cursor-pointer transition'>Sobre</Link>
-                <Link to='' smooth='easeInOutCubic' duration={700} className='hover:text-(--color-blue-light) cursor-pointer transition'>Serviços</Link>
+                <Link to='services' smooth='easeInOutCubic' duration={700} className='hover:text-(--color-blue-light) cursor-pointer transition'>Serviços</Link>
                 <Link to='projects' smooth='easeInOutCubic' duration={700} className='hover:text-(--color-blue-light) cursor-pointer transition'>Projetos</Link>
                 <div className='
                     bg-[linear-gradient(to_left,var(--color-blue-light3),var(--color-blue-light2),var(--color-blue-light3))]

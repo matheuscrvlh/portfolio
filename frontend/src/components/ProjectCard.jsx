@@ -1,3 +1,6 @@
+// DEPENDENCES
+import { Maximize2 } from 'lucide-react'
+
 export default function ProjectCard({img, type, title, desc, link}) {
     return (
         <div className='
@@ -16,22 +19,25 @@ export default function ProjectCard({img, type, title, desc, link}) {
                     </div>
                     <p className='text-white/80 w-80 wrap-break-word'>{desc}</p>
                 </div>
-                <button 
-                    onClick={() => window.open(`${link}`, '_blank')}
-                    className='
-                        mt-auto
-                        border border-white/20
-                        p-2 text-center font-semibold
-                        rounded-full cursor-pointer
-                        bg-[linear-gradient(to_right,white_50%,transparent_50%)]
-                        bg-size-[210%]
-                        bg-right
-                        hover:bg-left
-                        hover:text-black
-                        transition-all duration-400
-                    '>
-                    Ver Projeto
-                </button>
+                <div className='flex gap-3 items-center w-full mt-auto'>
+                    <button 
+                        onClick={() => window.open(`${link}`, '_blank')}
+                        className='
+                            w-[90%]
+                            border border-white/20
+                            p-2 text-center font-semibold
+                            rounded-full cursor-pointer
+                            bg-[linear-gradient(to_right,white_50%,transparent_50%)]
+                            bg-size-[210%]
+                            bg-right
+                            hover:bg-left
+                            hover:text-black
+                            transition-all duration-400
+                        '>
+                        Ver Projeto
+                    </button>
+                    <Maximize2 className='w-10 cursor-pointer hover:scale-108'/>
+                </div>
             </div>
         </div>
     )

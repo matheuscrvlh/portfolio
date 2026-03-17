@@ -20,6 +20,11 @@ export default function AboutDev() {
                     Mim
                 </span>
             </h2>
+            <div className='flex-col justify-items-center mb-16 mt-6'>
+                <h3 className='text-xl font-normal text-white/80'>Desenvolvimento com foco em performance, experiência do usuário e código escalável.</h3>
+                <h3 className='text-xl font-normal text-white/80'>Cada projeto é pensado para transformar ideias em produtos digitais eficientes.</h3>
+                <h3 className='text-xl font-normal text-white/80'>refletem a identidade e o propósito de cada cliente.</h3>
+            </div>
         </section>
     )
 }

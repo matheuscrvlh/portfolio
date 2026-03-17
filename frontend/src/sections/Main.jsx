@@ -1,3 +1,6 @@
+// DEPENDENCES
+import { Link } from 'react-scroll';
+
 // IMAGES
 import principal from "../assets/images/principal.png"
 
@@ -36,20 +39,23 @@ export default function Main() {
                     <h3 className='text-xl text-white/80'>Construo soluções que resolvem problemas e geram valor.</h3>
                 </div>
                 <div className='flex gap-5 h-10 mt-4'>
-                    <p className='
-                        border border-(--color-blue-light2)
-                        text-(--color-blue-light2)
-                        p-2 w-45 h-10 text-center
-                        rounded-full cursor-pointer
-                        bg-[linear-gradient(to_right,var(--color-blue-light2)_50%,transparent_50%)]
-                        bg-size-[200%]
-                        bg-right
-                        hover:bg-left
-                        hover:text-white
-                        transition-all duration-400
-                    '>
-                        Serviços
-                    </p>
+                    <Link
+                        to='aboutdev'
+                        smooth='easeInOutCubic' duration={700}
+                        className='
+                            border border-(--color-blue-light2)
+                            text-(--color-blue-light2)
+                            p-2 w-45 h-10 text-center
+                            rounded-full cursor-pointer
+                            bg-[linear-gradient(to_right,var(--color-blue-light2)_50%,transparent_50%)]
+                            bg-size-[200%]
+                            bg-right
+                            hover:bg-left
+                            hover:text-white
+                            transition-all duration-400'
+                    >
+                        Sobre Mim
+                    </Link>
                     <div className="flex gap-5 h-8 mt-auto mb-auto">
                         <img src={instagram} alt="instagram" className='cursor-pointer hover:scale-110 transition'/>
                         <img src={whatsapp} alt="whatsapp" className='cursor-pointer hover:scale-110 transition'/>
@@ -62,7 +68,7 @@ export default function Main() {
                 <img 
                     src={principal} 
                     alt="Imagem Principal" 
-                    className=''
+                    className='w-[25vw] rounded-4xl shadow-2xl'
                 />
             </div>
         </section>

@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 import Main from "../sections/Main"
-import About from "../sections/About"
+import AboutServices from "../sections/AboutServices"
 import Skills from "../sections/Skills"
 import Projects from "../sections/Projects"
 import Services from "../sections/Services"
@@ -11,7 +11,7 @@ export default function Home() {
         <main className='h-full'>
             <Navbar />
             <Main />
-            <About />
+            <AboutServices />
             <Services />
             <AboutDev />
             <Skills />

@@ -1,6 +1,6 @@
 import { MoveDownRight } from 'lucide-react'
 
-export default function About() {
+export default function AboutServices() {
     return (
         <section 
             id='about'
@@ -23,8 +23,8 @@ export default function About() {
                 </span>
             </h2>
             <div className='flex-col justify-items-center mb-16 mt-6'>
-                <h3 className='text-xl font-normal text-white/80'>Desenvolvimento com foco em performance, experiência do usuário e código escalável.</h3>
-                <h3 className='text-xl font-normal text-white/80'>Cada projeto é pensado para transformar ideias em produtos digitais eficientes.</h3>
+                <h3 className='text-xl font-normal text-white/80'>Sou desenvolvedor front-end especializado em criar experiências digitais modernas,</h3>
+                <h3 className='text-xl font-normal text-white/80'>funcionais e impactantes. Uno design estratégico e código limpo para entregar sites que</h3>
             </div>
             <div className='flex flex-col gap-5'>
                 <div className='flex gap-10 h-full p-4 items-center'>
