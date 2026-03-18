@@ -11,10 +11,10 @@ export default function Projects() {
     return (
         <section 
             id='projects'
-            className='flex flex-col items-center bg-(--color-blue-dark) h-full text-white pt-5 pb-20'
+            className='flex flex-col items-center bg-(--color-blue-dark) h-full text-white pt-15 pb-15'
         >
             <h3 className='
-                text-xl font-bold mt-10
+                text-xl font-bold
                 bg-linear-to-r 
                 from-(--color-blue-light) 
                 via-(--color-blue-light2) 

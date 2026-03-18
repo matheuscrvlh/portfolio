@@ -26,6 +26,7 @@ export default function Navbar() {
             flex justify-between items-center
             text-white w-full h-20 pl-40 pr-40
             fixed
+            z-1
             border-b transition-all duration-300
             ${show 
                 ? "opacity-95 border-(--color-blue-light2)/20" 

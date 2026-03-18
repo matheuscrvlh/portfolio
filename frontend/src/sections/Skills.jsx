@@ -18,8 +18,8 @@ import SkillCard from '../components/SkillCard.jsx'
 
 export default function Skills() {
     return (
-        <section className='flex flex-col h-full items-center bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) h-dvh text-white'>
-            <h2 className='text-5xl font-bold mt-10'>
+        <section className='flex flex-col h-full items-center bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) h-dvh text-white pt-15 pb-15'>
+            <h2 className='text-5xl font-bold'>
                 <span className='text-(--color-blue-light)'>
                     Minhas
                 </span>{'  '}

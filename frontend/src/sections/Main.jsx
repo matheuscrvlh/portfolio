@@ -16,7 +16,7 @@ export default function Main() {
             id='home'
             className='bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) h-dvh flex justify-between items-center text-white p-[15%]'
         >
-            <div className='flex flex-col gap-2 '>
+            <div className='flex flex-col gap-2 mt-auto mb-auto'>
                 <h2 className='text-4xl font-semibold'>Olá, sou Matheus</h2>
                 <h1 className='text-6xl font-bold'>
                     <span className='text-(--color-blue-light)'>
@@ -57,10 +57,18 @@ export default function Main() {
                         Sobre Mim
                     </Link>
                     <div className="flex gap-5 h-8 mt-auto mb-auto">
-                        <img src={instagram} alt="instagram" className='cursor-pointer hover:scale-110 transition'/>
-                        <img src={whatsapp} alt="whatsapp" className='cursor-pointer hover:scale-110 transition'/>
-                        <img src={github} alt="github" className='cursor-pointer hover:scale-110 transition'/>
-                        <img src={linkedin} alt="linkedin" className='cursor-pointer hover:scale-110 transition'/>
+                        <a href="https://www.instagram.com/mthcode/" target='_blank' rel="noopener noreferrer" className='cursor-pointer hover:scale-110 transition'>
+                            <img src={instagram} alt="instagram" className='w-8'/>
+                        </a>
+                        <a href="https://wa.me/5522988114263" target='_blank' rel="noopener noreferrer" className='cursor-pointer hover:scale-110 transition'>
+                            <img src={whatsapp} alt="whatsapp" className='w-8'/>
+                        </a>
+                        <a href="https://github.com/matheuscrvlh" target='_blank' rel="noopener noreferrer" className='cursor-pointer hover:scale-110 transition'>
+                            <img src={github} alt="github" className='w-8'/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/matheuscrvlh/" target='_blank' rel="noopener noreferrer" className='cursor-pointer hover:scale-110 transition'>
+                            <img src={linkedin} alt="linkedin" className='w-8'/>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -68,7 +76,7 @@ export default function Main() {
                 <img 
                     src={principal} 
                     alt="Imagem Principal" 
-                    className='w-[25vw] rounded-4xl shadow-2xl'
+                    className='w-[25vw] rounded-4xl shadow-2xl mt-auto mb-auto'
                 />
             </div>
         </section>
