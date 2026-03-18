@@ -1,5 +1,9 @@
+// DEPENDENCES
+import { useState, useEffect } from 'react'
+
 // COMPONENTS
 import ProjectCard from '../components/ProjectCard'
+import ModalProject from '../components/ModalProject'
 
 // IMAGES PROJETOS
 // Legacy
@@ -8,6 +12,12 @@ import homeLegacy from '../assets/projetos/legacyveiculos/home.png'
 // Cursos Novamix
 import homeNovamix from '../assets/projetos/cursosnovamix/home.png'
 export default function Projects() {
+    const [ showModal, setShowModal ] = useState(false)
+
+    useEffect(() => {
+        console.log(showModal)
+    }, [showModal])
+
     return (
         <section 
             id='projects'
@@ -34,6 +44,7 @@ export default function Projects() {
                     title='Loja de Veículos' 
                     desc='Sistema completo de catálogo. Cadastro de veículos, recebimento de propostas de clientes e painel administrativo para gestão.' 
                     link='https://legacyveiculos.com/'
+                    onclick={() => setShowModal(!showModal)}
                 />
                 <ProjectCard 
                     type='SISTEMA'
@@ -41,8 +52,13 @@ export default function Projects() {
                     title='Inscrições em Cursos' 
                     desc='Sistema completo de catálogo e inscrições em cursos. Gestão em painel administrativo.' 
                     link='https://cursos.lojanovamix.com.br/'
+                    onclick={() => setShowModal(!showModal)}
                 />
             </div>
+            {showModal
+                ? <ModalProject /> 
+                : ''
+            }
         </section>
     )
 }
