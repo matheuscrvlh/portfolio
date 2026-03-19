@@ -1,7 +1,7 @@
 // DEPENDENCES
 import { Maximize2 } from 'lucide-react'
 
-export default function ProjectCard({img, type, title, desc, link, onclick}) {
+export default function ProjectCard({img, type, title, desc, link, onClick}) {
     return (
         <div className='
             flex flex-col rounded-xl cursor-pointer
@@ -38,7 +38,7 @@ export default function ProjectCard({img, type, title, desc, link, onclick}) {
                     </button>
                     <Maximize2 
                         className='w-10 cursor-pointer hover:scale-108'
-                        onClick={onclick}
+                        onClick={onClick}
                     />
                 </div>
             </div>

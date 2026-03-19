@@ -5,18 +5,11 @@ import { useState, useEffect } from 'react'
 import ProjectCard from '../components/ProjectCard'
 import ModalProject from '../components/ModalProject'
 
-// IMAGES PROJETOS
-// Legacy
-import homeLegacy from '../assets/projetos/legacyveiculos/home.png'
+// PROJECTS
+import { projects } from '../data/projects'
 
-// Cursos Novamix
-import homeNovamix from '../assets/projetos/cursosnovamix/home.png'
 export default function Projects() {
-    const [ showModal, setShowModal ] = useState(false)
-
-    useEffect(() => {
-        console.log(showModal)
-    }, [showModal])
+    const [ projectModal, setProjectModal ] = useState(null)
 
     return (
         <section 
@@ -38,27 +31,24 @@ export default function Projects() {
             <h2 className='text-(--color-blue-light) text-5xl font-bold mb-6'>Projetos Recentes</h2>
             <h3 className='text-xl font-normal text-white/80 mb-15'>Confira alguns projetos desenvolvidos recentemente por mim.</h3>
             <div className='grid grid-cols-4 gap-8'>
-                <ProjectCard 
-                    type='SISTEMA'
-                    img={homeLegacy}
-                    title='Loja de Veículos' 
-                    desc='Sistema completo de catálogo. Cadastro de veículos, recebimento de propostas de clientes e painel administrativo para gestão.' 
-                    link='https://legacyveiculos.com/'
-                    onclick={() => setShowModal(!showModal)}
-                />
-                <ProjectCard 
-                    type='SISTEMA'
-                    img={homeNovamix} 
-                    title='Inscrições em Cursos' 
-                    desc='Sistema completo de catálogo e inscrições em cursos. Gestão em painel administrativo.' 
-                    link='https://cursos.lojanovamix.com.br/'
-                    onclick={() => setShowModal(!showModal)}
-                />
+                {projects.map(project => (
+                    <ProjectCard 
+                        key={project.id}
+                        {...project}
+                        onClick={() => { 
+                            setProjectModal({...project})
+                        }}
+                    />
+                ))}
             </div>
-            {showModal
-                ? <ModalProject /> 
-                : ''
-            }
+            {projectModal && (
+                <ModalProject 
+                    onClose={() => {
+                        setProjectModal(null)
+                    }}
+                    {...projectModal}
+                />
+            )}
         </section>
     )
 }
