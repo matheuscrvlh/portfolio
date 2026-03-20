@@ -51,7 +51,10 @@ export default function Projects() {
                     {...projectModal}
                 />
             )}
-            <button>
+            <button 
+                className='bg-(--color-blue-light2) py-6 px-10 rounded-xl font-semibold mt-12 
+                cursor-pointer hover:bg-(--color-blue-light2)/80 transition'
+            >
                 Ver Todos os Projetos
             </button>
         </section>

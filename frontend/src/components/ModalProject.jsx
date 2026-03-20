@@ -111,7 +111,7 @@ export default function ModalProject({
                         <Github 
                             onClick={linkGithub ? () => window.open(`${linkGithub}`, '_blank', 'noopener,noreferrer') : undefined}
                             aria-label="Abrir repositório no GitHub"
-                            className='w-10 h-10 hover:scale-108 transition cursor-pointer bg-black'
+                            className='w-10 h-10 hover:scale-108 transition cursor-pointer'
                         />
                     </div>
                 </div>
