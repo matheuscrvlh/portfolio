@@ -5,34 +5,100 @@ import homeLegacy from '../assets/projetos/legacyveiculos/home.png'
 import homeNovamix from '../assets/projetos/cursosnovamix/home.png'
 
 export const projects = [
-    {   
+    {
         id: 1,
-        type: 'SISTEMA',
+        type: 'Fullstack',
+        status: 'Em produção',
+        featured: true,
+        year: 2025,
+
         img: homeLegacy,
+        images: [homeLegacy],
+
         title: 'Loja de Veículos',
+
         desc: 'Sistema completo de catálogo. Cadastro de veículos, recebimento de propostas de clientes e painel administrativo para gestão.',
-        descCompleta: 'Sistema desenvolvido para gestão geral da loja. Contém CRUD de veículos com catalogo e filtro, formulário de proposta de clientes, integração com redes sociais, aba sobre a loja e gestão geral de todas informações em painel administrativo.',
-        link: 'https://legacyveiculos.com/',
+        descCompleta: 'Sistema completo de catálogo. Cadastro de veículos, recebimento de propostas de clientes e painel administrativo para gestão.',
+
+        features: [
+            'CRUD de veículos',
+            'Filtro avançado',
+            'Envio de propostas',
+            'Painel administrativo'
+        ],
+
+        challenges: [
+            'Integração frontend/backend',
+            'Organização de dados escalável'
+        ],
+
+        linkProject: 'https://legacyveiculos.com/',
+        linkGithub: null,
+
         techs: ['JavaScript', 'Node.js']
     },
     {
         id: 2,
-        type: 'SISTEMA',
+        type: 'Fullstack',
+        status: 'Em produção',
+        featured: true,
+        year: 2026,
+
         img: homeNovamix,
-        title: 'Inscrições em Cursos',
+        images: [homeNovamix],
+
+        title: 'Catálogo de Cursos',
+
         desc: 'Sistema completo de catálogo e inscrições em cursos. Gestão em painel administrativo.',
-        descCompleta: '',
-        link: 'https://cursos.lojanovamix.com.br/',
+        descCompleta: 'Sistema completo de catálogo e inscrições em cursos. Gestão em painel administrativo.',
+
+        features: [
+            'CRUD de cursos, culinaristas e inscrições',
+            'Filtro avançado',
+            'Envio de inscrições',
+            'Painel administrativo'
+        ],
+
+        challenges: [
+            'Integração frontend/backend',
+            'Organização de dados escalável'
+        ],
+
+        linkProject: 'https://cursos.lojanovamix.com.br/',
+        linkGithub: 'https://github.com/matheuscrvlh/cursos-novamix',
+
         techs: ['React.js', 'TailwindCSS', 'Node.js']
     },
     {
         id: 3,
-        type: 'SISTEMA',
+        type: 'Fullstack',
+        status: 'Em produção',
+        featured: false,
+        year: 2026,
+
         img: homeNovamix,
-        title: 'Inscrições em Cursos',
+        images: [homeNovamix],
+
+        title: 'Catálogo de Cursos',
+
         desc: 'Sistema completo de catálogo e inscrições em cursos. Gestão em painel administrativo.',
-        descCompleta: '',
-        link: 'https://cursos.lojanovamix.com.br/',
-        techs: ['React', 'Node']
+        descCompleta: 'Sistema com objetivo em catálogo de cursos com inscrições. Contém CRUD de cursos, cadastros, inscrições, culinaristas e demais usando React.js, TailwindCSS e Node.js. Gestão das informações feita em painel administrativo completo.',
+
+        features: [
+            'CRUD de cursos, culinaristas e inscrições',
+            'Filtro avançado',
+            'Envio de inscrições',
+            'Painel administrativo'
+        ],
+
+        challenges: [
+            'Integração frontend/backend',
+            'Organização de dados escalável'
+        ],
+
+        linkProject: 'https://cursos.lojanovamix.com.br/',
+        linkGithub: 'https://github.com/matheuscrvlh/cursos-novamix',
+
+        techs: ['React.js', 'TailwindCSS', 'Node.js']
     },
 ]

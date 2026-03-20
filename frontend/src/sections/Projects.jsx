@@ -32,13 +32,15 @@ export default function Projects() {
             <h3 className='text-xl font-normal text-white/80 mb-15'>Confira alguns projetos desenvolvidos recentemente por mim.</h3>
             <div className='grid grid-cols-4 gap-8'>
                 {projects.map(project => (
-                    <ProjectCard 
-                        key={project.id}
-                        {...project}
-                        onClick={() => { 
-                            setProjectModal({...project})
-                        }}
-                    />
+                    project.featured && (
+                        <ProjectCard 
+                            key={project.id}
+                            {...project}
+                            onClick={() => { 
+                                setProjectModal({...project})
+                            }}
+                        />
+                    )
                 ))}
             </div>
             {projectModal && (
@@ -49,6 +51,9 @@ export default function Projects() {
                     {...projectModal}
                 />
             )}
+            <button>
+                Ver Todos os Projetos
+            </button>
         </section>
     )
 }
