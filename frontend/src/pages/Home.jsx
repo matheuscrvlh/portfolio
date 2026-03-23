@@ -1,4 +1,8 @@
+// COMPONENTS
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+
+// SECTIONS
 import Main from "../sections/Main"
 import AboutServices from "../sections/AboutServices"
 import Skills from "../sections/Skills"
@@ -10,7 +14,7 @@ import Contact from "../sections/Contact"
 export default function Home() {
     return (
         <main className='h-full'>
-            <Navbar />
+            <Navbar className='bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark)' />
             <Main />
             <AboutServices />
             <Services />
@@ -18,6 +22,7 @@ export default function Home() {
             <Skills />
             <Projects />
             <Contact />
+            <Footer />
         </main>
     )
 }

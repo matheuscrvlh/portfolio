@@ -3,9 +3,29 @@ import { Link } from 'react-scroll';
 
 // REACT
 import { useState, useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 
-export default function Navbar() {
+export default function Navbar({ className }) {
     const [ show, setShow ] = useState(false);
+
+    const navigate = useNavigate()
+    const location = useLocation() 
+
+    function goTo(section) {
+        if(location.pathname !== '/') {
+            navigate('/');
+
+            setTimeout(() => {
+                document
+                .getElementById(section)
+                ?.scrollIntoView({ behavior: 'smooth' });
+            }, 100);
+        } else {
+            document
+            .getElementById(section)
+            ?.scrollIntoView({ behavior: 'smooth' })
+        }
+    }
 
     useEffect(() => {
         const handleScroll = () => {
@@ -22,23 +42,23 @@ export default function Navbar() {
 
     return (
         <nav className={`
-            bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) 
             flex justify-between items-center
             text-white w-full h-20 pl-40 pr-40
             fixed
             z-1
             border-b transition-all duration-300
+            ${className}
             ${show 
                 ? "opacity-95 border-(--color-blue-light2)/20" 
                 : "opacity-100 border-transparent"
             }
         `}>
-            <Link to='home' smooth='easeInOutCubic' duration={700} className='text-xl font-bold hover:text-(--color-blue-light) cursor-pointer transition'>MTHCODE</Link>
+            <p onClick={() => goTo('home')} className='text-xl font-bold hover:text-(--color-blue-light) cursor-pointer transition'>MTHCODE</p>
             <div className='flex gap-7 items-center font-semibold'>
-                <Link to='home' smooth='easeInOutCubic' duration={700} className='hover:text-(--color-blue-light) cursor-pointer transition'>Início</Link>
-                <Link to='about' smooth='easeInOutCubic' duration={700} href='#about' className='hover:text-(--color-blue-light) cursor-pointer transition'>Sobre</Link>
-                <Link to='services' smooth='easeInOutCubic' duration={700} className='hover:text-(--color-blue-light) cursor-pointer transition'>Serviços</Link>
-                <Link to='projects' smooth='easeInOutCubic' duration={700} className='hover:text-(--color-blue-light) cursor-pointer transition'>Projetos</Link>
+                <p onClick={() => goTo('home')} className='hover:text-(--color-blue-light) cursor-pointer transition'>Início</p>
+                <p onClick={() => goTo('about')} className='hover:text-(--color-blue-light) cursor-pointer transition'>Sobre</p>
+                <p onClick={() => goTo('services')} className='hover:text-(--color-blue-light) cursor-pointer transition'>Serviços</p>
+                <p onClick={() => goTo('projects')} className='hover:text-(--color-blue-light) cursor-pointer transition'>Projetos</p>
                 <div className='
                     bg-[linear-gradient(to_left,var(--color-blue-light3),var(--color-blue-light2),var(--color-blue-light3))]
                     bg-size-[200%]
@@ -49,7 +69,7 @@ export default function Navbar() {
                     pl-8 pr-8 pt-2 pb-2
                     rounded-full cursor-pointer
                 '>
-                    <Link to='' smooth='easeInOutCubic' duration={700}>Contato</Link>
+                    <p onClick={() => goTo('home')}>Contato</p>
                 </div>
             </div>
         </nav>

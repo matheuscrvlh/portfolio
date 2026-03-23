@@ -90,6 +90,7 @@ export default function ModalProject({
                             )}
                         </div>
                     </div>
+                    <p className='text-white/80 mt-4'>Finalizado em {year}</p>
                     <div className='flex gap-5 h-full mt-10'>
                         <button 
                             onClick={linkProject ? () => window.open(`${linkProject}`, '_blank', 'noopener,noreferrer') : undefined}

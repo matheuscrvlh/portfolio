@@ -1,5 +1,6 @@
 // DEPENDENCES
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 // COMPONENTS
 import ProjectCard from '../components/ProjectCard'
@@ -32,7 +33,7 @@ export default function Projects() {
             <h3 className='text-xl font-normal text-white/80 mb-15'>Confira alguns projetos desenvolvidos recentemente por mim.</h3>
             <div className='grid grid-cols-4 gap-8'>
                 {projects.map(project => (
-                    project.featured && (
+                    project.featured && project.id < 5 && (
                         <ProjectCard 
                             key={project.id}
                             {...project}
@@ -51,12 +52,13 @@ export default function Projects() {
                     {...projectModal}
                 />
             )}
-            <button 
-                className='bg-(--color-blue-light2) py-6 px-10 rounded-xl font-semibold mt-12 
-                cursor-pointer hover:bg-(--color-blue-light2)/80 transition'
-            >
-                Ver Todos os Projetos
-            </button>
+                <Link 
+                    to='/projetos'
+                    className='bg-(--color-blue-light2) py-3 px-10 rounded-xl font-semibold mt-16 
+                    cursor-pointer hover:bg-(--color-blue-light2)/80 transition'
+                >
+                    Ver Todos os Projetos
+                </Link>
         </section>
     )
 }

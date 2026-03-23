@@ -10,7 +10,7 @@ export const projects = [
         type: 'Fullstack',
         status: 'Em produção',
         featured: true,
-        year: 2025,
+        year: 'Maio de 2025',
 
         img: homeLegacy,
         images: [homeLegacy],
@@ -42,7 +42,7 @@ export const projects = [
         type: 'Fullstack',
         status: 'Em produção',
         featured: true,
-        year: 2026,
+        year: 'Março de 2026',
 
         img: homeNovamix,
         images: [homeNovamix],
