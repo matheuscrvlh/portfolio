@@ -9,7 +9,8 @@
   }
 }
 
-:root {
+@theme {
+  --color-*: initial;
   --color-white: #ffff;
   --color-blue-light: #9B81C4;
   --color-blue-light2: #8218D8;

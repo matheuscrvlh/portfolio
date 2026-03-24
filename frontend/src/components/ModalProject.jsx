@@ -43,11 +43,11 @@ export default function ModalProject({
         >
             <div 
                 onClick={(e) => e.stopPropagation()}
-                className='relative w-[40dvw] h-auto bg-(--color-blue-dark) rounded-2xl
+                className='relative w-[40dvw] h-auto bg-blue-dark rounded-2xl
             '>
                 <button 
                     onClick={onClose}
-                    className='bg-(--color-blue-base) font-bold rounded-full py-2 px-4 absolute top-2 right-2 cursor-pointer hover:scale-105 transition'
+                    className='bg-blue-base font-bold rounded-full py-2 px-4 absolute top-2 right-2 cursor-pointer hover:scale-105 transition'
                 >
                     X
                 </button>
@@ -61,14 +61,14 @@ export default function ModalProject({
                 <div className='p-8'>
                     <div className='flex justify-between'>
                         <div className='flex gap-2'>
-                            <p className='border border-(--color-blue-light)/20 text-(--color-blue-light)/90 px-4 py-2 rounded-xl font-bold text-md text-center'>{type}</p>
-                            <p className='border border-(--color-blue-light)/20 text-(--color-blue-light)/90 px-4 py-2 rounded-xl font-bold text-md text-center'>{status}</p>
+                            <p className='border border-blue-light)/20 text-blue-light)/90 px-4 py-2 rounded-xl font-bold text-md text-center'>{type}</p>
+                            <p className='border border-blue-light)/20 text-blue-light)/90 px-4 py-2 rounded-xl font-bold text-md text-center'>{status}</p>
                         </div>
                         <div className='flex gap-3'>
                             {techs.map((t, i) => 
                                 <p 
                                     key={i}
-                                    className='border border-(--color-blue-light)/20 text-(--color-blue-light)/90 px-6 py-2 rounded-xl font-bold text-md text-center'
+                                    className='border border-blue-light)/20 text-blue-light)/90 px-6 py-2 rounded-xl font-bold text-md text-center'
                                 >
                                     {t}
                                 </p>

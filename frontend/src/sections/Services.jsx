@@ -4,17 +4,17 @@ export default function Services() {
     return (
         <section 
             id='services'
-            className='flex flex-col h-full items-center bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) text-white pb-30'
+            className='flex flex-col h-full items-center bg-linear-to-l from-blue-base to-blue-dark text-white pb-30'
         >
             <h2 className='text-5xl font-bold mt-15'>
-                <span className='text-(--color-blue-light)'>
+                <span className='text-blue-light'>
                     Meus
                 </span>{'  '}
                 <span className='
                     bg-linear-to-r 
-                    from-(--color-blue-light) 
-                    via-(--color-blue-light2) 
-                    to-(--color-blue-light)
+                    from-blue-light 
+                    via-blue-light2
+                    to-blue-light
                     bg-size-[200%_200%]
                     animate-[gradient_5s_ease-in-out_infinite]
                     bg-clip-text text-transparent
@@ -29,8 +29,8 @@ export default function Services() {
             <div className='grid grid-cols-2 gap-8'>
                 <div className='
                     w-150 h-full p-8
-                    bg-(--color-blue-dark)/30 rounded-3xl
-                    border border-(--color-blue-light2)/30
+                    bg-blue-dark/30 rounded-3xl
+                    border border-blue-light2/30
                 '>  
                     <p className='text-3xl font-bold text-white/90 mb-2'>Site Institucional Profissional</p>
                     <div className='flex gap-3 mb-6'>
@@ -61,17 +61,17 @@ export default function Services() {
                         </div>
                     </div>
                     <a href="https://wa.me/5522988114263" target='_blank' rel="noopener noreferrer">
-                        <button className='w-full rounded-lg border border-(--color-blue-light2)/30 p-2 font-semibold cursor-pointer hover:border-(--color-blue-light2)/10'>
+                        <button className='w-full rounded-lg border border-blue-light2/30 p-2 font-semibold cursor-pointer hover:border-blue-light2/10'>
                             Solicitar Orçamento
                         </button>
                     </a>
                 </div>
                 <div className='
                     w-150 h-full p-8 scale-107
-                    bg-(--color-blue-dark)/30 rounded-3xl
-                    border border-(--color-blue-light2)
+                    bg-blue-dark/30 rounded-3xl
+                    border border-blue-light2
                 '>  
-                    <p className='bg-(--color-blue-light2) p-2 w-35 rounded-full font-bold text-center text-sm mb-5'>RECOMENDADO</p>
+                    <p className='bg-blue-light2 p-2 w-35 rounded-full font-bold text-center text-sm mb-5'>RECOMENDADO</p>
                     <p className='text-3xl font-bold text-white/90 mb-2'>Projeto Web Personalizado</p>
                     <div className='flex gap-3 mb-6'>
                         <p className='text-4xl font-bold text-white/70'>R$ 1.200</p>
@@ -109,7 +109,7 @@ export default function Services() {
                         </div>
                     </div>
                     <a href="https://wa.me/5522988114263" target='_blank' rel="noopener noreferrer">
-                        <button className='w-full rounded-lg bg-(--color-blue-light2) p-2 font-semibold cursor-pointer hover:bg-(--color-blue-light2)/90'>
+                        <button className='w-full rounded-lg bg-blue-light2 p-2 font-semibold cursor-pointer hover:bg-blue-light2/90'>
                             Solicitar Orçamento
                         </button>
                     </a>

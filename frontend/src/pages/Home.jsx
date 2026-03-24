@@ -2,6 +2,9 @@
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
+// HOOKS
+import useBodyBackground from '../hooks/useBodyBackground'
+
 // SECTIONS
 import Main from "../sections/Main"
 import AboutServices from "../sections/AboutServices"
@@ -12,9 +15,12 @@ import AboutDev from "../sections/AboutDev"
 import Contact from "../sections/Contact"
 
 export default function Home() {
+
+    useBodyBackground('bg-blue-dark')
+
     return (
-        <main className='h-full'>
-            <Navbar className='bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark)' />
+        <main className='w-full h-full'>
+            <Navbar className='bg-linear-to-l from-blue-base to-blue-dark' />
             <Main />
             <AboutServices />
             <Services />

@@ -8,14 +8,14 @@ export default function AboutDev() {
         >
             <div className='w-[50vw] mr-[30%] text-center'>
                 <h2 className='text-5xl font-bold mt-10'>
-                    <span className='text-(--color-blue-light)'>
+                    <span className='text-blue-light'>
                         Sobre
                     </span>{'  '}
                     <span className='
                         bg-linear-to-r 
-                        from-(--color-blue-light) 
-                        via-(--color-blue-light2) 
-                        to-(--color-blue-light)
+                        from-blue-light
+                        via-blue-light2 
+                        to-blue-light
                         bg-size-[200%_200%]
                         animate-[gradient_5s_ease-in-out_infinite]
                         bg-clip-text text-transparent

@@ -5,7 +5,7 @@ export default function ProjectCard({img, type, status, title, desc, linkProject
     return (
         <div className='
             flex flex-col rounded-xl cursor-pointer
-            bg-linear-to-t from-(--color-blue-base) to-(--color-blue-dark)
+            bg-linear-to-t from-blue-dark to-blue-dark
             
         '>
             <div className='aspect-video overflow-hidden bg-black h-full max-h-50 w-full max-w-90 rounded-t-xl'>
@@ -15,8 +15,8 @@ export default function ProjectCard({img, type, status, title, desc, linkProject
                 <div className='flex flex-col gap-5'>
                     <div className='flex flex-col gap-2'>
                         <div className='flex gap-2'>
-                            <p className='border border-(--color-blue-light)/20 text-(--color-blue-light)/90 px-3 py-2 rounded-xl font-bold text-sm text-center'>{type}</p>
-                            <p className='border border-(--color-blue-light)/20 text-(--color-blue-light)/90 px-3 py-2 rounded-xl font-bold text-sm text-center'>{status}</p>
+                            <p className='border border-blue-light/20 text-blue-light/90 px-3 py-2 rounded-xl font-bold text-sm text-center'>{type}</p>
+                            <p className='border border-blue-light/20 text-blue-light/90 px-3 py-2 rounded-xl font-bold text-sm text-center'>{status}</p>
                         </div>
                         <p className='font-semibold text-2xl'>{title}</p>
                     </div>

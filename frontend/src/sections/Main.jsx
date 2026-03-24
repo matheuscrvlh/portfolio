@@ -14,19 +14,19 @@ export default function Main() {
     return (
         <section
             id='home'
-            className='bg-linear-to-l from-(--color-blue-base) to-(--color-blue-dark) h-dvh flex justify-between items-center text-white p-[15%]'
+            className='bg-linear-to-l from-blue-base to-blue-dark w-full h-dvh flex justify-between items-center text-white p-[15%]'
         >
             <div className='flex flex-col gap-2 mt-auto mb-auto'>
-                <h2 className='text-4xl font-semibold'>Olá, sou Matheus</h2>
-                <h1 className='text-6xl font-bold'>
-                    <span className='text-(--color-blue-light)'>
+                <h2 className='text-2xl md:text-4xl font-semibold'>Olá, sou Matheus</h2>
+                <h1 className='text-4xl md:text-6xl font-bold'>
+                    <span className='text-blue-light'>
                         Desenvolvedor
                     </span>{'  '}
                     <span className='
                         bg-linear-to-r 
-                        from-(--color-blue-light) 
-                        via-(--color-blue-light2) 
-                        to-(--color-blue-light)
+                        from-blue-light
+                        via-blue-light2
+                        to-blue-light
                         bg-size-[200%_200%]
                         animate-[gradient_5s_ease-in-out_infinite]
                         bg-clip-text text-transparent
@@ -43,8 +43,8 @@ export default function Main() {
                         to='aboutdev'
                         smooth='easeInOutCubic' duration={700}
                         className='
-                            border border-(--color-blue-light2)
-                            text-(--color-blue-light2)
+                            border border-blue-light2
+                            text-blue-light2
                             p-2 w-45 h-10 text-center
                             rounded-full cursor-pointer
                             bg-[linear-gradient(to_right,var(--color-blue-light2)_50%,transparent_50%)]
