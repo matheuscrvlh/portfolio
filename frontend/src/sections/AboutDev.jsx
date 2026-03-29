@@ -4,10 +4,12 @@ export default function AboutDev() {
     return (
         <section 
             id='aboutdev'
-            className='flex flex-col relative items-center bg-black h-full text-white pt-15 pb-15'
+            className='w-full h-full flex flex-col relative items-center bg-black text-white xl:pt-15 xl:pb-15'
         >
-            <div className='w-[50vw] mr-[30%] text-center'>
-                <h2 className='text-5xl font-bold mt-10'>
+            <div className='w-[85vw] text-center
+                xl:w-[50vw] xl:mr-[30%] 
+            '>
+                <h2 className='text-4xl font-bold mt-10 md:text-5xl'>
                     <span className='text-blue-light'>
                         Sobre
                     </span>{'  '}
@@ -23,8 +25,8 @@ export default function AboutDev() {
                         Mim
                     </span>
                 </h2>
-                <div className='flex text-left relative justify-between mb-16 mt-12'>
-                    <div className='flex flex-col w-full gap-8 text-lg text-white/80'>
+                <div className='flex text-left relative justify-between mb-16 mt-5 md:mt-12'>
+                    <div className='flex flex-col w-full gap-8 text-sm text-white/80 md:text-lg'>
                         <p>
                             Sou desenvolvedor web focado na criação de aplicações modernas, rápidas e bem estruturadas, com o objetivo de transformar ideias em soluções digitais reais.
                             Ao longo dos meus estudos e projetos práticos, venho construindo uma base sólida no desenvolvimento full stack, entendendo tanto a parte visual quanto a lógica
@@ -48,7 +50,10 @@ export default function AboutDev() {
                 <img 
                     src={secundaria} 
                     alt="Imagem Desenvolvedor" 
-                    className='absolute top-0 right-0 h-full'
+                    className='
+                        h-[100vw] right-0 bottom-0
+                        absolute xl:h-full xl:top-0 sm:max-h-full
+                    '
                 />
             </div>
         </section>

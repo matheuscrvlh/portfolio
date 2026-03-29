@@ -39,11 +39,16 @@ export default function ModalProject({
     return (
         <div 
             onClick={onClose}
-            className='fixed flex justify-center items-center w-screen inset-0 h-dvh bg-black/80 z-50 backdrop-blur-xs'
+            className='
+                fixed flex justify-center items-center w-screen inset-0 h-dvh bg-black/20 z-50 backdrop-blur-xs
+                md:bg-black/80
+            '
         >
             <div 
                 onClick={(e) => e.stopPropagation()}
-                className='relative w-[40dvw] h-auto bg-blue-dark rounded-2xl
+                className='
+                    relative w-[85dvw] h-[90dvh] overflow-y-auto bg-blue-dark rounded-2xl
+                    md:w-[40dvw] md:h-auto
             '>
                 <button 
                     onClick={onClose}
@@ -59,30 +64,35 @@ export default function ModalProject({
                     />
                 </div>
                 <div className='p-8'>
-                    <div className='flex justify-between'>
+                    <div className='
+                        flex flex-col gap-3
+                        md:flex-row md:justify-between md:gap-0
+                    '>
                         <div className='flex gap-2'>
-                            <p className='border border-blue-light)/20 text-blue-light)/90 px-4 py-2 rounded-xl font-bold text-md text-center'>{type}</p>
-                            <p className='border border-blue-light)/20 text-blue-light)/90 px-4 py-2 rounded-xl font-bold text-md text-center'>{status}</p>
+                            <p className='border border-blue-light/20 text-blue-light/90 px-2 py-1 rounded-xl font-bold text-sm text-center md:text-md md:px-4 md:py-2'>{type}</p>
+                            <p className='border border-blue-light/20 text-blue-light/90 px-2 py-1 rounded-xl font-bold text-sm text-center md:text-md md:px-4 md:py-2'>{status}</p>
                         </div>
                         <div className='flex gap-3'>
                             {techs.map((t, i) => 
                                 <p 
                                     key={i}
-                                    className='border border-blue-light)/20 text-blue-light)/90 px-6 py-2 rounded-xl font-bold text-md text-center'
-                                >
+                                    className='
+                                        border border-blue-light/20 text-blue-light/90 px-2 py-1 rounded-xl font-bold text-sm text-center
+                                        md:px-6 md:py-2 md:text-md 
+                                    '>
                                     {t}
                                 </p>
                             )}
                         </div>
                     </div>
-                    <p className='text-2xl font-bold mt-2'>{title}</p>
-                    <p className='text-white/80 w-[90%] wrap-break-word mt-3'>{descCompleta}</p>
+                    <p className='text-xl font-bold mt-4 md:text-2xl '>{title}</p>
+                    <p className='text-white/80 w-[90%] text-sm wrap-break-word mt-2 md:text-base'>{descCompleta}</p>
                     <div className='flex flex-col gap-1 mt-6'>
                         <p className='font-bold text-xl'>Funcionalidades</p>
                         <div>
                             {features.map((f, i) => 
                                 <p 
-                                    className='text-white/80'
+                                    className='text-white/80 text-sm md:text-base'
                                     key={i}
                                 >
                                     - {f}

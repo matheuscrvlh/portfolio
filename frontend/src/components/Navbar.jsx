@@ -45,10 +45,10 @@ export default function Navbar({ className }) {
         <nav 
             className={`
                 flex justify-between items-center
-                text-white w-dvw h-15 px-5
+                text-white w-dvw h-15 px-10
                 fixed z-1
                 border-b transition-all duration-300
-                md:px-40 md:h-20
+                lg:px-40 lg:h-20 lg:p-0
                 ${className}
                 ${show 
                     ? "opacity-95 border-blue-light2/20" 
@@ -60,33 +60,35 @@ export default function Navbar({ className }) {
             <p onClick={() => goTo('home')} className='text-xl font-bold hover:text-blue-light cursor-pointer transition'>MTHCODE</p>
 
             {/* MENU MOBILE */}
-            <div className='flex md:hidden gap-2 justify-between font-semibold'>
+            <div className='flex lg:hidden gap-2 justify-between font-semibold'>
                 <Menu onClick={() => setShowMenu(!showMenu)} />
                     {showMenu && 
-                        <div className='flex flex-col absolute gap-2 left-0 min-w-dvw min-h-full mt-8 px-4 py-4 bg-blue-dark'>
-                            <p onClick={() => goTo('home')} className='hover:text-blue-light cursor-pointer transition'>Início</p>
-                            <p onClick={() => goTo('about')} className='hover:text-blue-light cursor-pointer transition'>Sobre</p>
-                            <p onClick={() => goTo('services')} className='hover:text-blue-light cursor-pointer transition'>Serviços</p>
-                            <p onClick={() => goTo('projects')} className='hover:text-blue-light cursor-pointer transition'>Projetos</p>
-                            <div className='
-                                bg-[linear-gradient(to_left,var(--color-blue-light3),var(--color-blue-light2),var(--color-blue-light3))]
-                                bg-size-[200%]
-                                bg-right mt-2 w-[90dvw]
-                                text-center
-                                hover:bg-left
-                                hover:scale-105
-                                transition-all duration-400
-                                px-8 py-2
-                                rounded-xl cursor-pointer
-                            '>
-                                <p onClick={() => goTo('contact')}>Contato</p>
+                        <div className='flex flex-col absolute items-center gap-2 left-0 mx-auto min-w-dvw min-h-full mt-8 py-4 bg-blue-dark'>
+                            <div className='w-[90%]'>
+                                <p onClick={() => goTo('home')} className='hover:text-blue-light cursor-pointer transition'>Início</p>
+                                <p onClick={() => goTo('about')} className='hover:text-blue-light cursor-pointer transition'>Sobre</p>
+                                <p onClick={() => goTo('services')} className='hover:text-blue-light cursor-pointer transition'>Serviços</p>
+                                <p onClick={() => goTo('projects')} className='hover:text-blue-light cursor-pointer transition'>Projetos</p>
                             </div>
+                            <div className='
+                                    bg-[linear-gradient(to_left,var(--color-blue-light3),var(--color-blue-light2),var(--color-blue-light3))]
+                                    bg-size-[200%]
+                                    bg-right mt-2 w-[90dvw]
+                                    text-center mx-auto
+                                    hover:bg-left
+                                    hover:scale-105
+                                    transition-all duration-400
+                                    px-8 py-2
+                                    rounded-xl cursor-pointer
+                                '>
+                                    <p onClick={() => goTo('contact')}>Contato</p>
+                                </div>
                         </div>
                     }  
             </div>
 
             {/* MENU DESKTOP */}
-            <div className='hidden md:flex gap-7 items-center font-semibold'>
+            <div className='hidden lg:flex gap-7 items-center font-semibold'>
                 <p onClick={() => goTo('home')} className='hover:text-blue-light cursor-pointer transition'>Início</p>
                 <p onClick={() => goTo('about')} className='hover:text-blue-light cursor-pointer transition'>Sobre</p>
                 <p onClick={() => goTo('services')} className='hover:text-blue-light cursor-pointer transition'>Serviços</p>

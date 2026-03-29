@@ -12,6 +12,7 @@
 @theme {
   --color-*: initial;
   --color-white: #ffff;
+  --color-black: #000000;
   --color-blue-light: #9B81C4;
   --color-blue-light2: #8218D8;
   --color-blue-light3: #2A1253;

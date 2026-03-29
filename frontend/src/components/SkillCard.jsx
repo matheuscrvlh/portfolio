@@ -1,7 +1,18 @@
 export default function SkillCard({img, alt, desc}) {
     return (
-        <div className='bg-blue-base rounded-xl p-5 hover:-translate-y-1 cursor-pointer transition justify-items-center text-center hover:shadow-lg'>
-            <img src={img} alt={alt} className='w-20 pb-3'/>
+        <div className='
+            flex flex-col items-center bg-blue-base rounded-xl px-2 py-4 hover:-translate-y-1 cursor-pointer transition justify-items-center text-center
+            min-w-30 
+            md:px-5 md:py-5
+            hover:shadow-lg
+        '>
+            <img 
+                src={img} 
+                alt={alt} 
+                className='
+                    w-15 pb-2
+                    md:w-20 md:p-3
+            '/>
             <p className='text-white/75'>{desc}</p>
         </div>
     )

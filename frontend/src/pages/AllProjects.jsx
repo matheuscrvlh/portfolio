@@ -33,12 +33,14 @@ export default function AllProjects() {
         <main className='h-full'>
             <Navbar className='bg-blue-dark'/>
             <section 
-                className='flex flex-col items-center bg-blue-dark min-h-screen h-full text-white pt-35'
-            >
+                className='
+                    flex flex-col items-center bg-blue-dark h-full text-white pt-25 pb-10 
+                    md:w-auto md:pb-15
+            '>
                 <h3 className='
                     text-xl font-bold
                     bg-linear-to-r 
-                    from-blue-light 
+                    from-blue-light
                     via-blue-light2
                     to-blue-light
                     bg-size-[200%_200%]
@@ -47,9 +49,14 @@ export default function AllProjects() {
                 '>
                     PORTFÓLIO COMPLETO
                 </h3>
-                <h2 className='text-blue-light text-5xl font-bold mb-6'>Todos os Projetos</h2>
-                <h3 className='text-xl font-normal text-white/80 mb-15'>Confira alguns projetos desenvolvidos recentemente por mim.</h3>
-                <div className='grid grid-cols-4 gap-8'>
+                <h2 className='text-blue-light text-4xl font-bold mb-3 md:text-5xl md:mb-6'>Todos os Projetos</h2>
+                <h3 className='text-md font-normal text-white/80 mb-10 w-[85vw] text-center md:text-xl md:mb-15 md:w-auto'>Confira alguns projetos desenvolvidos recentemente por mim.</h3>
+                <div className='
+                    flex w-screen overflow-x-auto px-10 pt-2 pb-4 gap-6
+                    md:grid md:grid-cols-2 md:gap-8 md:w-auto md:overflow-x-hidden md:px-0
+                    lg:grid-cols-3
+                    2xl:grid-cols-4
+                '>
                     {projects.map(project => (
                         project.featured && project.id < 5 && (
                             <ProjectCard 

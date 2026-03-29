@@ -18,8 +18,11 @@ import SkillCard from '../components/SkillCard.jsx'
 
 export default function Skills() {
     return (
-        <section className='flex flex-col h-full items-center bg-linear-to-l from-blue-base to-blue-dark text-white pt-15 pb-15'>
-            <h2 className='text-5xl font-bold'>
+        <section className='
+            flex flex-col h-full items-center text-center bg-linear-to-l from-blue-base to-blue-dark text-white pt-15 pb-5 
+            md:pb-15
+        '>
+            <h2 className='text-4xl font-bold md:text-5xl'>
                 <span className='text-blue-light'>
                     Minhas
                 </span>{'  '}
@@ -35,12 +38,15 @@ export default function Skills() {
                     Habilidades
                 </span>
             </h2>
-            <div className='flex-col justify-items-center mb-12 mt-5'>
-                <h3 className='text-xl font-normal text-white/80'>Desenvolvimento com foco em performance, experiência do usuário e código escalável.</h3>
-                <h3 className='text-xl font-normal text-white/80'>Cada projeto é pensado para transformar ideias em produtos digitais eficientes.</h3>
+            <div className='flex-col justify-items-center w-[85vw] mb-12 mt-3 md:w-full md:mt-6'>
+                <h3 className='text-md font-normal text-white/80 md:text-xl'>Desenvolvimento com foco em performance, experiência do usuário e código escalável.</h3>
+                <h3 className='text-md font-normal text-white/80 md:text-xl'>Cada projeto é pensado para transformar ideias em produtos digitais eficientes.</h3>
             </div>
-            <p className='text-blue-light text-2xl font-bold mb-6'>TECNOLOGIAS</p>
-            <div className='grid grid-cols-5 gap-10 mb-15'>
+            <p className='text-blue-light text-xl font-bold mb-6 md:text-2xl'>TECNOLOGIAS</p>
+            <div className='
+                flex overflow-x-auto w-screen gap-3 mb-15 px-5 
+                md:grid md:grid-cols-5 md:px-0 md:w-auto md:py-1 md:gap-10
+            '>
                 <SkillCard img={typescript} alt='TypeScript' desc='TypeScript'/>
                 <SkillCard img={react} alt='React' desc='React.js'/>
                 <SkillCard img={next} alt='Next.js' desc='Next.js'/>
@@ -50,8 +56,11 @@ export default function Skills() {
                 <SkillCard img={html} alt='HTML5' desc='HTML5'/>
                 <SkillCard img={css} alt='CSS3' desc='CSS3'/>
             </div>
-            <p className='text-blue-light text-2xl font-bold mb-6'>FERRAMENTAS</p>
-            <div className='grid grid-cols-5 gap-10 mb-10'>
+            <p className='text-blue-light text-xl font-bold mb-6 md:text-2xl'>FERRAMENTAS</p>
+            <div className='
+                flex overflow-x-auto w-screen gap-3 mb-10 px-5
+                md:grid md:grid-cols-5 md:px-0 md:w-auto md:py-1 md:gap-10
+            '>
                 <SkillCard img={git} alt='Git' desc='Git' />
                 <SkillCard img={github2} alt='GitHub' desc='GitHub' />
                 <SkillCard img={photoshop} alt='Photoshop' desc='Photoshop' />
