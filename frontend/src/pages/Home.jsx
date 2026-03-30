@@ -15,8 +15,8 @@ import AboutDev from "../sections/AboutDev"
 import Contact from "../sections/Contact"
 
 export default function Home() {
-
-    useBodyBackground('bg-blue-dark')
+    
+    useBodyBackground('#0E0615')
 
     return (
         <main className='w-full h-full'>

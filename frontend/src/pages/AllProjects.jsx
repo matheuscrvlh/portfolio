@@ -27,7 +27,7 @@ export default function AllProjects() {
         scrollToTop();
     }, [])
 
-    useBodyBackground('bg-blue-dark')
+    useBodyBackground('#0E0615')
 
     return (
         <main className='h-full'>
