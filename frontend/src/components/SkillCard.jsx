@@ -10,10 +10,10 @@ export default function SkillCard({img, alt, desc}) {
                 src={img} 
                 alt={alt} 
                 className='
-                    w-15 pb-2
+                    w-10 pb-2
                     md:w-20 md:p-3
             '/>
-            <p className='text-white/75'>{desc}</p>
+            <p className='text-white/75 text-sm md:text-base'>{desc}</p>
         </div>
     )
 }

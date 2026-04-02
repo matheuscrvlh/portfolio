@@ -11,7 +11,7 @@ export default function Contact() {
                 flex flex-col h-full items-center bg-linear-to-b from-blue-base to-blue-dark text-white pt-15 pb-25
             '
         >
-            <h2 className='text-4xl font-bold md:text-4xl w-[85vw] text-center md:w-auto'>
+            <h2 className='text-3xl font-bold w-[85vw] text-center md:w-auto md:text-5xl'>
                 <span className='text-blue-light'>
                     Vamos transformar sua 
                 </span>{'  '}
@@ -28,8 +28,8 @@ export default function Contact() {
                 </span>
             </h2>
             <div className='flex-col justify-items-center mb-12 mt-5 w-[85vw] text-center md:w-auto'>
-                <h3 className='text-xl font-normal text-white/80'>Entre em contato e descubra como criar experiências eficientes,</h3>
-                <h3 className='text-xl font-normal text-white/80'>modernas e voltadas para resultados reais.</h3>
+                <h3 className='text-md font-normal text-white/80 md:text-xl'>Entre em contato e descubra como criar experiências eficientes,</h3>
+                <h3 className='text-md font-normal text-white/80 md:text-xl'>modernas e voltadas para resultados reais.</h3>
             </div>
             <div className='flex gap-5 mt-6 w-[85vw] md:w-auto md:mt-20 md:gap-10'>
                 <a href="https://wa.me/5522988114263" target="_blank">
