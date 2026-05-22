@@ -2,7 +2,9 @@
 // Legacy
 import homeLegacy from '../assets/projetos/legacyveiculos/home.png'
 // Cursos Novamix
-import homeNovamix from '../assets/projetos/cursosnovamix/home.png'
+import homeCursosNovamix from '../assets/projetos/cursosnovamix/home.png'
+// Avaliacoes Novamix
+import homeAvaliacoesNovamix from '../assets/projetos/avaliacoesnovamix/home.png'
 
 export const projects = [
     {
@@ -44,8 +46,8 @@ export const projects = [
         featured: true,
         year: 'Março de 2026',
 
-        img: homeNovamix,
-        images: [homeNovamix],
+        img: homeCursosNovamix,
+        images: [homeCursosNovamix],
 
         title: 'Catálogo de Cursos',
 
@@ -73,32 +75,49 @@ export const projects = [
         id: 3,
         type: 'Fullstack',
         status: 'Em produção',
-        featured: false,
+        featured: true,
         year: 2026,
 
-        img: homeNovamix,
-        images: [homeNovamix],
+        img: homeAvaliacoesNovamix,
+        images: [homeAvaliacoesNovamix],
 
-        title: 'Catálogo de Cursos',
+        title: 'Sistema de Avaliações',
 
-        desc: 'Sistema completo de catálogo e inscrições em cursos. Gestão em painel administrativo.',
-        descCompleta: 'Sistema com objetivo em catálogo de cursos com inscrições. Contém CRUD de cursos, cadastros, inscrições, culinaristas e demais usando React.js, TailwindCSS e Node.js. Gestão das informações feita em painel administrativo completo.',
+        desc: 'Sistema completo de avaliações com dashboard administrativo e acompanhamento de feedbacks em tempo real.',
+
+        descCompleta: 'Sistema desenvolvido para coleta e gerenciamento de avaliações de clientes da NovaMix Food Service. Possui área pública para envio de avaliações, autenticação JWT, painel administrativo completo, filtros avançados, exportação CSV, integração com avaliações do Google e responsividade total para desktop e mobile.',
 
         features: [
-            'CRUD de cursos, culinaristas e inscrições',
-            'Filtro avançado',
-            'Envio de inscrições',
-            'Painel administrativo'
+            'Área pública de avaliações',
+            'Dashboard administrativo',
+            'Autenticação JWT',
+            'Filtros avançados',
+            'Exportação CSV',
+            'Dark Mode',
+            'Integração com Google Reviews',
+            'Responsividade Mobile/Desktop'
         ],
 
         challenges: [
+            'Estruturação escalável de avaliações',
             'Integração frontend/backend',
-            'Organização de dados escalável'
+            'Controle de autenticação segura',
+            'Performance em listagens e filtros'
         ],
 
-        linkProject: 'https://cursos.lojanovamix.com.br/',
-        linkGithub: 'https://github.com/matheuscrvlh/cursos-novamix',
+        linkProject: 'https://avaliacoes.lojanovamix.com.br/?loja=1',
+        linkGithub: 'https://github.com/matheuscrvlh/avaliacoes-novamix',
 
-        techs: ['React.js', 'TailwindCSS', 'Node.js']
+        techs: [
+            'React.js',
+            'TypeScript',
+            'TailwindCSS',
+            'Node.js',
+            'Express',
+            'SQLite',
+            'Docker',
+            'JWT'
+        ]
     },
+    
 ]

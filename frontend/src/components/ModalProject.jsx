@@ -47,8 +47,8 @@ export default function ModalProject({
             <div 
                 onClick={(e) => e.stopPropagation()}
                 className='
-                    relative w-[85dvw] h-[90dvh] overflow-y-auto bg-blue-dark rounded-2xl
-                    md:w-[40dvw] md:h-auto
+                    relative w-[85dvw] h-[90dvh] overflow-y-auto overflow-x-hidden custom-scrollbar bg-blue-dark rounded-2xl
+                    md:w-[40dvw] md:h-[95dvh] 
             '>
                 <button 
                     onClick={onClose}
@@ -72,7 +72,7 @@ export default function ModalProject({
                             <p className='border border-blue-light/20 text-blue-light/90 px-2 py-1 rounded-xl font-bold text-sm text-center md:text-md md:px-4 md:py-2'>{type}</p>
                             <p className='border border-blue-light/20 text-blue-light/90 px-2 py-1 rounded-xl font-bold text-sm text-center md:text-md md:px-4 md:py-2'>{status}</p>
                         </div>
-                        <div className='flex gap-3'>
+                        <div className='flex flex-wrap gap-3'>
                             {techs.map((t, i) => 
                                 <p 
                                     key={i}
