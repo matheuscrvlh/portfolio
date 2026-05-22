@@ -69,7 +69,7 @@ export const projects = [
         linkProject: 'https://cursos.lojanovamix.com.br/',
         linkGithub: 'https://github.com/matheuscrvlh/cursos-novamix',
 
-        techs: ['React.js', 'TailwindCSS', 'Node.js']
+        techs: ['React.js', 'TailwindCSS', 'Node.js', 'Docker']
     },
     {
         id: 3,
