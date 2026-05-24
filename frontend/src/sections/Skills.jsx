@@ -4,10 +4,15 @@ import react from '../assets/icons/react.png'
 import next from '../assets/icons/next.png'
 import node from '../assets/icons/node.png'
 import tailwind from '../assets/icons/tailwind.png'
+import postgresdb from '../assets/icons/postgresdb.png'
+import mongodb from '../assets/icons/mongodb.png'
+import sqlite from '../assets/icons/sqlite.png'
 import javascript from '../assets/icons/javascript.png'
 import css from '../assets/icons/css.png'
 import html from '../assets/icons/html.png'
 
+import docker from '../assets/icons/docker.png'
+import nginx from '../assets/icons/nginx.png'
 import git from '../assets/icons/git.png'
 import github2 from '../assets/icons/github2.png'
 import photoshop from '../assets/icons/photoshop.png'
@@ -52,15 +57,21 @@ export default function Skills() {
                 <SkillCard img={next} alt='Next.js' desc='Next.js'/>
                 <SkillCard img={node} alt='Node.js' desc='Node.js'/>
                 <SkillCard img={tailwind} alt='Tailwind CSS' desc='Tailwind CSS'/>
+                <SkillCard img={postgresdb} alt='PostgresDB' desc='Postgres'/>
+                <SkillCard img={mongodb} alt='MongoDB' desc='MongoDB'/>
+                <SkillCard img={sqlite} alt='SQLite' desc='SQLite'/>
                 <SkillCard img={javascript} alt='JavaScript' desc='JavaScript'/>
                 <SkillCard img={html} alt='HTML5' desc='HTML5'/>
                 <SkillCard img={css} alt='CSS3' desc='CSS3'/>
+                
             </div>
             <p className='text-blue-light text-xl font-bold mb-6 md:text-2xl'>FERRAMENTAS</p>
             <div className='
                 flex overflow-x-auto w-screen gap-3 mb-10 px-5
                 md:grid md:grid-cols-5 md:px-0 md:w-auto md:py-1 md:gap-10
             '>
+                <SkillCard img={docker} alt='Docker' desc='Docker' />
+                <SkillCard img={nginx} alt='Nginx' desc='Nginx' />
                 <SkillCard img={git} alt='Git' desc='Git' />
                 <SkillCard img={github2} alt='GitHub' desc='GitHub' />
                 <SkillCard img={photoshop} alt='Photoshop' desc='Photoshop' />
