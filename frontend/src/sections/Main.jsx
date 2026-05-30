@@ -58,8 +58,8 @@ export default function Main() {
 
                 {/* CTA + redes */}
                 <div className='flex flex-col gap-4'>
-                    {/* Botões */}
-                    <div className='flex items-center gap-3'>
+                    {/* Botões + icons desktop */}
+                    <div className='flex items-center gap-3 flex-wrap'>
                         <a
                             href='https://wa.me/5522988114263'
                             target='_blank'
@@ -82,9 +82,26 @@ export default function Main() {
                             '>
                             Projetos Entregues
                         </button>
+
+                        {/* Icons — só desktop */}
+                        <div className='hidden sm:flex items-center gap-4 ml-1'>
+                            <div className='w-px h-5 bg-white/15'/>
+                            {[
+                                { href: 'https://www.instagram.com/mthcode/', src: instagram, alt: 'Instagram' },
+                                { href: 'https://wa.me/5522988114263',         src: whatsapp,  alt: 'WhatsApp'  },
+                                { href: 'https://github.com/matheuscrvlh',     src: github,    alt: 'GitHub'    },
+                                { href: 'https://www.linkedin.com/in/matheuscrvlh/', src: linkedin, alt: 'LinkedIn' },
+                            ].map(s => (
+                                <a key={s.alt} href={s.href} target='_blank' rel='noopener noreferrer'
+                                    className='hover:scale-110 transition'>
+                                    <img src={s.src} alt={s.alt} className='w-8'/>
+                                </a>
+                            ))}
+                        </div>
                     </div>
-                    {/* Redes */}
-                    <div className='flex items-center gap-3 justify-center sm:justify-start'>
+
+                    {/* Icons — só mobile, com box */}
+                    <div className='flex sm:hidden items-center gap-3 justify-center'>
                         {[
                             { href: 'https://www.instagram.com/mthcode/', src: instagram, alt: 'Instagram' },
                             { href: 'https://wa.me/5522988114263',         src: whatsapp,  alt: 'WhatsApp'  },
