@@ -67,10 +67,10 @@ export default function Main() {
                             className='
                                 flex-1 sm:flex-none text-center
                                 bg-blue-light2 text-white
-                                px-4 py-2.5 rounded-full whitespace-nowrap font-semibold
+                                px-3 py-2 rounded-full whitespace-nowrap font-semibold text-sm
                                 hover:bg-blue-light2/80
                                 transition-all duration-200
-                                sm:px-6
+                                sm:px-6 sm:py-2.5 sm:text-base
                             '>
                             Solicitar Orçamento
                         </a>
@@ -79,10 +79,10 @@ export default function Main() {
                             className='
                                 flex-1 sm:flex-none
                                 border border-white/20 text-white/70
-                                px-4 py-2.5 rounded-full cursor-pointer whitespace-nowrap
+                                px-3 py-2 rounded-full cursor-pointer whitespace-nowrap text-sm
                                 hover:border-white/40 hover:text-white
                                 transition-all duration-200
-                                sm:px-6
+                                sm:px-6 sm:py-2.5 sm:text-base
                             '>
                             Projetos Entregues
                         </button>
