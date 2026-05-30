@@ -37,15 +37,15 @@ export default function AboutServices() {
                     md:text-5xl md:inline md:mt-10
                 '>
                     <span className='text-blue-light'>Desenvolvido com foco no</span>{' '}
-                    <span className='text-gradient block text-3xl sm:text-4xl md:text-5xl md:inline'>
+                    <span className='text-gradient text-3xl sm:text-4xl md:text-5xl'>
                         seu negócio
                     </span>
                 </h2>
                 </FadeIn>
                 <FadeIn delay={0.1}>
                     <div className='flex flex-col mb-10 mt-3 md:mt-6 md:mb-25'>
-                        <h3 className='text-md font-normal text-white/80 md:text-xl'>Na MTH Code, cada projeto é desenvolvido de forma personalizada, sem modelos genéricos ou soluções prontas.</h3>
-                        <h3 className='text-md font-normal text-white/80 md:text-xl'>O objetivo é criar um site que represente sua marca, transmita credibilidade e gere resultados reais.</h3>
+                        <h3 className='text-sm font-normal text-white/80 md:text-xl'>Na MTH Code, cada projeto é desenvolvido de forma personalizada, sem modelos genéricos ou soluções prontas.</h3>
+                        <h3 className='text-sm font-normal text-white/80 md:text-xl'>O objetivo é criar um site que represente sua marca, transmita credibilidade e gere resultados reais.</h3>
                     </div>
                 </FadeIn>
 
@@ -64,7 +64,7 @@ export default function AboutServices() {
                                     {String(index + 1).padStart(2, '0')}
                                 </span>
                                 <div className='flex flex-col gap-1 text-left'>
-                                    <p className='text-xl font-semibold sm:text-2xl'>{item.title}</p>
+                                    <p className='text-base font-semibold sm:text-xl md:text-2xl'>{item.title}</p>
                                     <p className='text-white/70 text-sm md:text-base leading-relaxed'>{item.desc}</p>
                                 </div>
                             </div>

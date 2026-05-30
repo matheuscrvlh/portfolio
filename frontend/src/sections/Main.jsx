@@ -29,7 +29,7 @@ export default function Main() {
 
             {/* Texto */}
             <motion.div
-                className='relative z-10 flex flex-col gap-8 mt-auto mb-auto w-[85dvw] 2xl:w-auto'
+                className='relative z-10 flex flex-col gap-4 mt-auto mb-auto w-[85dvw] 2xl:w-auto md:gap-8'
                 initial={{ opacity: 0, x: -40 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
@@ -59,26 +59,30 @@ export default function Main() {
                 {/* CTA + redes */}
                 <div className='flex flex-col gap-4'>
                     {/* Botões + icons desktop */}
-                    <div className='flex items-center gap-3 flex-wrap'>
+                    <div className='flex items-center gap-3'>
                         <a
                             href='https://wa.me/5522988114263'
                             target='_blank'
                             rel='noopener noreferrer'
                             className='
+                                flex-1 sm:flex-none text-center
                                 bg-blue-light2 text-white
-                                px-6 py-2.5 rounded-full whitespace-nowrap font-semibold
+                                px-4 py-2.5 rounded-full whitespace-nowrap font-semibold
                                 hover:bg-blue-light2/80
                                 transition-all duration-200
+                                sm:px-6
                             '>
                             Solicitar Orçamento
                         </a>
                         <button
                             onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
                             className='
+                                flex-1 sm:flex-none
                                 border border-white/20 text-white/70
-                                px-6 py-2.5 rounded-full cursor-pointer whitespace-nowrap
+                                px-4 py-2.5 rounded-full cursor-pointer whitespace-nowrap
                                 hover:border-white/40 hover:text-white
                                 transition-all duration-200
+                                sm:px-6
                             '>
                             Projetos Entregues
                         </button>

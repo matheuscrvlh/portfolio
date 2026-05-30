@@ -67,10 +67,10 @@ export default function Contact() {
                             target='_blank'
                             rel='noopener noreferrer'
                             className='
-                                flex items-center justify-center gap-3
-                                px-5 py-4 rounded-2xl
+                                flex items-center justify-center gap-2
+                                px-3 py-4 rounded-2xl sm:px-5 sm:gap-3
                                 bg-blue-base border border-blue-light2/15
-                                text-white/70 font-semibold text-sm
+                                text-white/70 font-semibold text-xs sm:text-sm
                                 hover:border-blue-light2/40 hover:text-white/90 hover:bg-blue-light2/8
                                 hover:-translate-y-0.5
                                 transition-all duration-250
@@ -82,10 +82,10 @@ export default function Contact() {
                     </FadeInItem>
                     <FadeInItem>
                         <div className='
-                            flex items-center justify-center gap-3
-                            px-5 py-4 rounded-2xl
+                            flex items-center justify-center gap-2
+                            px-3 py-4 rounded-2xl sm:px-5 sm:gap-3
                             bg-blue-base border border-blue-light2/15
-                            text-white/45 text-sm
+                            text-white/45 text-xs sm:text-sm
                         '>
                             <img src={telefone} alt='Telefone' className='w-4 h-4 opacity-50 shrink-0'/>
                             (22) 98811-4263
