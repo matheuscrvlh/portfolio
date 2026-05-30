@@ -1,78 +1,79 @@
-import { MoveDownRight } from 'lucide-react'
+import FadeIn, { FadeInStagger, FadeInItem } from '../components/FadeIn'
 
 export default function AboutServices() {
+    const items = [
+        {
+            title: 'Publicação em poucos dias',
+            desc: 'Do planejamento à entrega, seu site pode estar online em até 7 dias após a aprovação do projeto.',
+        },
+        {
+            title: 'Comunicação sem intermediários',
+            desc: 'Você acompanha o desenvolvimento diretamente com quem está construindo o seu site, garantindo mais agilidade e alinhamento durante todo o processo.',
+        },
+        {
+            title: 'Suporte incluso',
+            desc: 'Após a entrega, você conta com 30 dias de suporte para ajustes, orientações e acompanhamento, sem custos adicionais.',
+        },
+        {
+            title: 'Preparado para o Google',
+            desc: 'Estrutura otimizada com boas práticas de SEO para aumentar a visibilidade da sua empresa e facilitar que novos clientes encontrem seus serviços.',
+        },
+    ]
+
     return (
-        <section 
+        <section
             id='about'
             className='
-                flex flex-col items-center bg-blue-dark min-w-full h-full text-white pt-5 pb-10 mx-auto text-center sm:pb-20 sm:pt-20
+                flex flex-col items-center bg-blue-dark min-w-full h-full text-white
+                pt-10 pb-10 mx-auto text-center
+                sm:pb-20 sm:pt-30
             '>
-            <div className='
-                w-[85vw]
-                md:w-full
-            '>
+            <div className='w-[85vw] md:w-full'>
+                <FadeIn>
+                <p className='text-sm font-bold text-gradient tracking-widest mb-3'>POR QUE A MTH CODE</p>
                 <h2 className='
-                    font-bold mt-6 text-4xl block
+                    font-bold mt-2 text-4xl block
                     sm:text-5xl
                     md:text-5xl md:inline md:mt-10
                 '>
-                    <span className='text-blue-light'>
-                        Qualidade que
-                    </span>{" "}
-                    <span className='
-                        bg-linear-to-r 
-                        from-blue-light
-                        via-blue-light2 
-                        to-blue-light
-                        bg-size-[200%_200%]
-                        animate-[gradient_5s_ease-in-out_infinite]
-                        bg-clip-text text-transparent block text-4xl
-                        sm:text-5xl
-                        md:text-5xl md:inline
-                    '>
-                        Gera Resultado
+                    <span className='text-blue-light'>Desenvolvido com foco no</span>{' '}
+                    <span className='text-gradient block text-4xl sm:text-5xl md:text-5xl md:inline'>
+                        seu negócio
                     </span>
                 </h2>
-                <div className='
-                    flex flex-col justify-items-center mb-16 mt-3 md:mt-6 
-                '>
-                    <h3 className='text-md font-normal text-white/80 md:text-xl'>Sou desenvolvedor full-stack especializado em criar experiências digitais modernas,</h3>
-                    <h3 className='text-md font-normal text-white/80 md:text-xl'>funcionais e impactantes.</h3>
-                </div>
-                <div className='
-                    grid grid-cols-1 mx-auto gap-2 w-[85vw]
-                    lg:w-250 sm:gap-5
-                '>
-                    <div className='flex flex-col gap-5 h-full p-3 items-center sm:p-4 sm:gap-10 lg:w-250 lg:flex-row'>
-                        <p className='text-xl font-semibold sm:text-3xl sm:w-[40%]'>Design Estratégico</p>
-                        <p className='text-white/75 w-auto text-sm sm:w-[50%] md:text-base'>Interfaces modernas que refletem a identidade da sua marca e priorizam a experiência do usuário, garantindo navegação intuitiva e visual profissional.</p>
-                        <MoveDownRight className='hidden cursor-pointer lg:inline w-[10%]'/>
+                </FadeIn>
+                <FadeIn delay={0.1}>
+                    <div className='flex flex-col mb-10 mt-3 md:mt-6 md:mb-25'>
+                        <h3 className='text-md font-normal text-white/80 md:text-xl'>Na MTH Code, cada projeto é desenvolvido de forma personalizada, sem modelos genéricos ou soluções prontas.</h3>
+                        <h3 className='text-md font-normal text-white/80 md:text-xl'>O objetivo é criar um site que represente sua marca, transmita credibilidade e gere resultados reais.</h3>
                     </div>
-                    <hr className='border-blue-light2/40 w-[70%] mx-auto lg:w-230' />
-                    <div className='flex flex-col gap-5 h-full p-3 items-center sm:p-4 sm:gap-10 lg:w-250 lg:flex-row'>
-                        <p className='text-2xl font-semibold sm:text-3xl sm:w-[40%]'>Performance</p>
-                        <p className='text-white/75 w-auto text-sm sm:w-[50%] md:text-base'>Sites rápidos, otimizados e preparados para todos os dispositivos, garantindo carregamento eficiente e melhor experiência para o usuário.</p>
-                        <MoveDownRight className='hidden cursor-pointer lg:inline w-[10%]'/>
-                    </div>
-                    <hr className='border-blue-light2/40 w-[70%] mx-auto lg:w-230' />
-                    <div className='flex flex-col gap-5 h-full p-3 items-center sm:p-4 sm:gap-10 lg:w-250 lg:flex-row'>
-                        <p className='text-xl font-semibold sm:text-3xl sm:w-[40%]'>Resultado</p>
-                        <p className='text-white/75 w-auto text-sm sm:w-[50%] md:text-base'>Soluções desenvolvidas para gerar impacto real, transformando presença digital em valor para o negócio.</p>
-                        <MoveDownRight className='hidden cursor-pointer lg:inline w-[10%]'/>
-                    </div>
-                    <hr className='border-blue-light2/40 w-[70%] mx-auto lg:w-230' />
-                    <div className='flex flex-col gap-5 h-full p-3 items-center sm:p-4 sm:gap-10 lg:w-250 lg:flex-row'>
-                        <p className='text-xl font-semibold sm:text-3xl sm:w-[40%]'>Código Limpo</p>
-                        <p className='text-white/75 w-auto text-sm sm:w-[50%] md:text-base'>Código organizado e escalável, seguindo boas práticas para garantir manutenção fácil e crescimento do projeto.</p>
-                        <MoveDownRight className='hidden cursor-pointer lg:inline w-[10%]'/>
-                    </div>
-                    <hr className='border-blue-light2/40 w-[70%] mx-auto lg:w-230' />
-                    <div className='flex flex-col gap-5 h-full p-3 items-center sm:p-4 sm:gap-10 lg:w-250 lg:flex-row'>
-                        <p className='text-xl font-semibold sm:text-3xl sm:w-[40%]'>SEO</p>
-                        <p className='text-white/75 w-auto text-sm sm:w-[50%] md:text-base'>Aplicações estruturadas para melhor indexação nos motores de busca, aumentando a visibilidade e alcance do projeto na internet.</p>
-                        <MoveDownRight className='hidden cursor-pointer lg:inline w-[10%]'/>
-                    </div>
-                </div>
+                </FadeIn>
+
+                <FadeInStagger stagger={0.1} className='grid grid-cols-1 mx-auto w-[85vw] lg:w-250'>
+                    {items.map((item, index) => (
+                        <FadeInItem key={index}>
+                            <div className='
+                                flex flex-col gap-3 px-4 py-5 rounded-2xl text-left
+                                hover:bg-blue-light2/5 transition-colors duration-200
+                                sm:flex-row sm:gap-8 sm:items-start
+                            '>
+                                <span className='
+                                    text-blue-light2/60 font-bold text-4xl leading-none
+                                    shrink-0 w-8
+                                '>
+                                    {String(index + 1).padStart(2, '0')}
+                                </span>
+                                <div className='flex flex-col gap-1 text-left'>
+                                    <p className='text-xl font-semibold sm:text-2xl'>{item.title}</p>
+                                    <p className='text-white/70 text-sm md:text-base leading-relaxed'>{item.desc}</p>
+                                </div>
+                            </div>
+                            {index < items.length - 1 && (
+                                <hr className='border-blue-light2/15 mx-4' />
+                            )}
+                        </FadeInItem>
+                    ))}
+                </FadeInStagger>
             </div>
         </section>
     )

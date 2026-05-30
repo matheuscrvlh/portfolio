@@ -7,6 +7,7 @@ import useBodyBackground from '../hooks/useBodyBackground'
 
 // SECTIONS
 import Main from "../sections/Main"
+import Stats from "../sections/Stats"
 import AboutServices from "../sections/AboutServices"
 import Skills from "../sections/Skills"
 import Projects from "../sections/Projects"
@@ -20,8 +21,9 @@ export default function Home() {
 
     return (
         <main className='w-full h-full'>
-            <Navbar className='bg-linear-to-l from-blue-base to-blue-dark' />
+            <Navbar className='bg-transparent' />
             <Main />
+            <Stats />
             <AboutServices />
             <Services />
             <AboutDev />
