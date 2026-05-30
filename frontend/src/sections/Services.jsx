@@ -96,6 +96,7 @@ export default function Services() {
                             </p>
 
                             {/* Price */}
+                            <p className='text-white/35 text-xs text-left mb-1'>a partir de</p>
                             <div className='flex items-end gap-3 mb-1 text-left'>
                                 <span className={`font-bold leading-none ${plan.featured ? 'text-5xl' : 'text-4xl'}`}>
                                     {plan.price}
