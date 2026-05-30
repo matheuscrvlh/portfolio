@@ -19,7 +19,7 @@ export default function Contact() {
             {/* Header */}
             <FadeIn className='text-center w-[85vw] md:w-auto mb-16 md:mb-20'>
                 <p className='text-sm font-bold text-gradient tracking-widest mb-3'>CONTATO</p>
-                <h2 className='font-bold text-4xl sm:text-5xl'>
+                <h2 className='font-bold text-3xl sm:text-4xl md:text-5xl'>
                     <span className='text-blue-light'>Vamos transformar sua </span>
                     <span className='text-gradient'>presença digital?</span>
                 </h2>

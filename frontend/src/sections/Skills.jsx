@@ -30,7 +30,7 @@ export default function Skills() {
         '>
             <FadeIn>
             <p className='text-sm font-bold text-gradient tracking-widest mb-3'>HABILIDADES</p>
-            <h2 className='font-bold text-4xl sm:text-5xl'>
+            <h2 className='font-bold text-3xl sm:text-4xl md:text-5xl'>
                 <span className='text-blue-light'>Minhas </span>
                 <span className='text-gradient'>Habilidades</span>
             </h2>

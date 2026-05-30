@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, Instagram, Github, Linkedin } from 'lucide-react'
 
 const navLinks = [
     { label: 'Início',   id: 'home' },
@@ -76,29 +76,54 @@ export default function Navbar({ className }) {
                 flex flex-col overflow-hidden
                 transition-all duration-300
                 lg:hidden
-                ${showMenu ? 'max-h-screen opacity-100 py-2' : 'max-h-0 opacity-0'}
+                ${showMenu ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'}
             `}>
-                {navLinks.map(link => (
-                    <button
-                        key={link.id}
-                        onClick={() => goTo(link.id)}
-                        className='px-8 py-4 text-left text-base font-semibold
-                            text-white/75 hover:text-white hover:bg-blue-light2/5
-                            transition-all duration-200
-                            border-b border-blue-light2/8 last:border-0
-                            cursor-pointer'
+                {/* Links */}
+                <div className='px-6 pt-4 pb-3 flex flex-col gap-1'>
+                    {navLinks.map(link => (
+                        <button
+                            key={link.id}
+                            onClick={() => goTo(link.id)}
+                            className='px-4 py-3.5 rounded-xl text-left
+                                text-white/70 font-semibold hover:text-white hover:bg-blue-light2/8
+                                transition-all duration-200 cursor-pointer'
+                        >
+                            {link.label}
+                        </button>
+                    ))}
+                </div>
+
+                {/* CTA */}
+                <div className='px-6 pb-4'>
+                    <a
+                        href='https://wa.me/5522988114263'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                        className='
+                            flex items-center justify-center gap-2 w-full
+                            py-3.5 rounded-xl font-semibold text-sm
+                            bg-[linear-gradient(to_left,var(--color-blue-light3),var(--color-blue-light2),var(--color-blue-light3))]
+                            bg-size-[200%] bg-right hover:bg-left
+                            transition-all duration-400
+                            shadow-[0_0_16px_rgba(130,24,216,0.4)]
+                        '
                     >
-                        {link.label}
-                    </button>
-                ))}
-                <div className='px-8 py-4'>
-                    <button
-                        onClick={() => goTo('contact')}
-                        className='w-full bg-blue-light2 py-3 rounded-xl font-semibold
-                            hover:bg-blue-light2/80 transition cursor-pointer'
-                    >
-                        Contato
-                    </button>
+                        Solicitar Orçamento
+                    </a>
+                </div>
+
+                {/* Redes */}
+                <div className='flex items-center gap-5 px-8 py-4 border-t border-blue-light2/8'>
+                    <a href='https://www.instagram.com/mthcode/' target='_blank' rel='noopener noreferrer' className='text-white/30 hover:text-white/70 transition'>
+                        <Instagram size={18}/>
+                    </a>
+                    <a href='https://github.com/matheuscrvlh' target='_blank' rel='noopener noreferrer' className='text-white/30 hover:text-white/70 transition'>
+                        <Github size={18}/>
+                    </a>
+                    <a href='https://www.linkedin.com/in/matheuscrvlh/' target='_blank' rel='noopener noreferrer' className='text-white/30 hover:text-white/70 transition'>
+                        <Linkedin size={18}/>
+                    </a>
+                    <span className='ml-auto text-white/15 text-xs'>mthcode.dev</span>
                 </div>
             </div>
 

@@ -37,7 +37,7 @@ export default function AllProjects() {
                 {/* Header */}
                 <FadeIn className='w-[85vw] text-center md:w-auto mb-8'>
                     <p className='text-sm font-bold text-gradient tracking-widest mb-3'>PORTFÓLIO COMPLETO</p>
-                    <h2 className='font-bold text-4xl sm:text-5xl mb-3'>
+                    <h2 className='font-bold text-3xl sm:text-4xl md:text-5xl mb-3'>
                         <span className='text-blue-light'>Todos os </span>
                         <span className='text-gradient'>Projetos</span>
                     </h2>

@@ -25,19 +25,19 @@ export default function AboutServices() {
             id='about'
             className='
                 flex flex-col items-center bg-blue-dark min-w-full h-full text-white
-                pt-10 pb-10 mx-auto text-center
-                sm:pb-20 sm:pt-30
+                pt-16 pb-12 mx-auto text-center
+                sm:pb-20 sm:pt-32
             '>
             <div className='w-[85vw] md:w-full'>
                 <FadeIn>
                 <p className='text-sm font-bold text-gradient tracking-widest mb-3'>POR QUE A MTH CODE</p>
                 <h2 className='
-                    font-bold mt-2 text-4xl block
-                    sm:text-5xl
+                    font-bold mt-2 text-3xl block
+                    sm:text-4xl
                     md:text-5xl md:inline md:mt-10
                 '>
                     <span className='text-blue-light'>Desenvolvido com foco no</span>{' '}
-                    <span className='text-gradient block text-4xl sm:text-5xl md:text-5xl md:inline'>
+                    <span className='text-gradient block text-3xl sm:text-4xl md:text-5xl md:inline'>
                         seu negócio
                     </span>
                 </h2>

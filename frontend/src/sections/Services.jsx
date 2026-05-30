@@ -51,7 +51,7 @@ export default function Services() {
             {/* Header */}
             <FadeIn className='w-[85vw] md:w-auto mb-12 md:mb-16'>
                 <p className='text-sm font-bold text-gradient tracking-widest mb-3'>SERVIÇOS</p>
-                <h2 className='font-bold text-4xl sm:text-5xl'>
+                <h2 className='font-bold text-3xl sm:text-4xl md:text-5xl'>
                     <span className='text-blue-light'>Meus </span>
                     <span className='text-gradient'>Serviços</span>
                 </h2>

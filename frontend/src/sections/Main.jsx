@@ -45,7 +45,7 @@ export default function Main() {
                     <h2 className='text-2xl font-semibold text-white/80 md:text-3xl'>
                         Olá, sou Matheus
                     </h2>
-                    <h1 className='text-4xl font-bold leading-tight sm:text-5xl md:text-6xl'>
+                    <h1 className='text-3xl font-bold leading-tight sm:text-4xl md:text-5xl lg:text-6xl'>
                         <span className='text-blue-light'>Crio a presença digital </span>
                         <span className='text-gradient'>que o seu negócio merece.</span>
                     </h1>
@@ -57,43 +57,57 @@ export default function Main() {
                 </p>
 
                 {/* CTA + redes */}
-                <div className='flex items-center gap-4 flex-wrap'>
-                    <a
-                        href='https://wa.me/5522988114263'
-                        target='_blank'
-                        rel='noopener noreferrer'
-                        className='
-                            bg-blue-light2 text-white
-                            px-6 py-2.5 rounded-full whitespace-nowrap font-semibold
-                            hover:bg-blue-light2/80
-                            transition-all duration-200
-                        '>
-                        Solicitar Orçamento
-                    </a>
-                    <button
-                        onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
-                        className='
-                            border border-white/20 text-white/70
-                            px-6 py-2.5 rounded-full cursor-pointer whitespace-nowrap
-                            hover:border-white/40 hover:text-white
-                            transition-all duration-200
-                        '>
-                        Projetos Entregues
-                    </button>
-                    <div className='w-px h-6 bg-white/15 hidden sm:block'/>
-                    <div className='hidden sm:flex items-center gap-4'>
-                        <a href="https://www.instagram.com/mthcode/" target='_blank' rel="noopener noreferrer" className='hover:scale-110 transition'>
-                            <img src={instagram} alt="instagram" className='w-7 md:w-8'/>
+                <div className='flex flex-col gap-4'>
+                    {/* Botões */}
+                    <div className='flex items-center gap-3'>
+                        <a
+                            href='https://wa.me/5522988114263'
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='
+                                bg-blue-light2 text-white
+                                px-6 py-2.5 rounded-full whitespace-nowrap font-semibold
+                                hover:bg-blue-light2/80
+                                transition-all duration-200
+                            '>
+                            Solicitar Orçamento
                         </a>
-                        <a href="https://wa.me/5522988114263" target='_blank' rel="noopener noreferrer" className='hover:scale-110 transition'>
-                            <img src={whatsapp} alt="whatsapp" className='w-7 md:w-8'/>
-                        </a>
-                        <a href="https://github.com/matheuscrvlh" target='_blank' rel="noopener noreferrer" className='hover:scale-110 transition'>
-                            <img src={github} alt="github" className='w-7 md:w-8'/>
-                        </a>
-                        <a href="https://www.linkedin.com/in/matheuscrvlh/" target='_blank' rel="noopener noreferrer" className='hover:scale-110 transition'>
-                            <img src={linkedin} alt="linkedin" className='w-7 md:w-8'/>
-                        </a>
+                        <button
+                            onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+                            className='
+                                border border-white/20 text-white/70
+                                px-6 py-2.5 rounded-full cursor-pointer whitespace-nowrap
+                                hover:border-white/40 hover:text-white
+                                transition-all duration-200
+                            '>
+                            Projetos Entregues
+                        </button>
+                    </div>
+                    {/* Redes */}
+                    <div className='flex items-center gap-3 justify-center sm:justify-start'>
+                        {[
+                            { href: 'https://www.instagram.com/mthcode/', src: instagram, alt: 'Instagram' },
+                            { href: 'https://wa.me/5522988114263',         src: whatsapp,  alt: 'WhatsApp'  },
+                            { href: 'https://github.com/matheuscrvlh',     src: github,    alt: 'GitHub'    },
+                            { href: 'https://www.linkedin.com/in/matheuscrvlh/', src: linkedin, alt: 'LinkedIn' },
+                        ].map(s => (
+                            <a
+                                key={s.alt}
+                                href={s.href}
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className='
+                                    flex items-center justify-center
+                                    w-9 h-9 rounded-xl
+                                    border border-white/10 bg-white/5
+                                    hover:border-blue-light2/50 hover:bg-blue-light2/10
+                                    hover:scale-105
+                                    transition-all duration-200
+                                '
+                            >
+                                <img src={s.src} alt={s.alt} className='w-4.5 h-4.5'/>
+                            </a>
+                        ))}
                     </div>
                 </div>
             </motion.div>

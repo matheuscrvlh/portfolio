@@ -5,12 +5,12 @@ export default function AboutDev() {
     return (
         <section
             id='aboutdev'
-            className='w-full h-full flex flex-col relative items-center bg-black text-white xl:pt-15 xl:pb-15'
+            className='w-full h-full flex flex-col relative items-center bg-black text-white pt-14 pb-12 xl:pt-20 xl:pb-20'
         >
             <div className='w-[85vw] text-center xl:w-[50vw] xl:mr-[30%]'>
                 <FadeIn>
                     <p className='text-sm font-bold text-gradient tracking-widest mb-3'>SOBRE MIM</p>
-                    <h2 className='font-bold text-4xl sm:text-5xl mt-2'>
+                    <h2 className='font-bold text-3xl sm:text-4xl md:text-5xl mt-2'>
                         <span className='text-blue-light'>Sobre </span>
                         <span className='text-gradient'>Mim</span>
                     </h2>
