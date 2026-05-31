@@ -20,6 +20,11 @@ import p4_2 from '../assets/projetos/lamatahorto/2.png'
 import p4_3 from '../assets/projetos/lamatahorto/3.png'
 import p4_4 from '../assets/projetos/lamatahorto/4.png'
 
+// ─── PROJETO 5 — Portfólio Ian Mello ────────────────────────────────────────────────
+import p5_1 from '../assets/projetos/portfolioianmello/1.png'
+import p5_2 from '../assets/projetos/portfolioianmello/2.png'
+import p5_3 from '../assets/projetos/portfolioianmello/3.png'
+
 
 export const projects = [
     {
@@ -34,7 +39,7 @@ export const projects = [
 
         title: 'Loja de Veículos',
 
-        desc: 'Sistema completo de catálogo. Cadastro de veículos, recebimento de propostas de clientes e painel administrativo para gestão.',
+        desc: 'Plataforma completa de catálogo de veículos com cadastro, filtros avançados, envio de propostas e painel administrativo.',
         descCompleta: 'Plataforma completa para gestão e exposição de veículos à venda. Permite o cadastro de veículos com fotos e especificações, filtragem avançada por modelo, ano e faixa de preço, envio de propostas de compra por parte dos clientes, e um painel administrativo protegido para gerenciar o estoque e acompanhar as propostas recebidas.',
 
         features: [
@@ -66,7 +71,7 @@ export const projects = [
 
         title: 'Catálogo de Cursos',
 
-        desc: 'Sistema completo de catálogo e inscrições em cursos. Gestão em painel administrativo.',
+        desc: 'Plataforma de catálogo de cursos com inscrições online, filtros avançados e painel administrativo completo.',
         descCompleta: 'Plataforma completa para catálogo de cursos e gestão de inscrições. Permite que clientes visualizem os cursos disponíveis com filtros avançados e realizem inscrições diretamente pelo site. O painel administrativo oferece CRUD completo de cursos, culinaristas e inscrições, com controle total sobre o conteúdo exibido.',
 
         features: [
@@ -145,8 +150,8 @@ export const projects = [
 
         title: 'Lamata Horto',
 
-        desc: 'Site institucional da empresa com catálogo de produtos.',
-        descCompleta: 'Site institucional da empresa com catálogo de produtos, filtros na página de catálogo, sobre e contato.',
+        desc: 'Site institucional com catálogo de produtos, filtros, carrossel de imagens e páginas de sobre e contato.',
+        descCompleta: 'Site institucional desenvolvido para a Lamata Horto, com foco em apresentação de produtos e experiência de navegação fluida. Conta com página inicial completa, catálogo com filtros por categoria, página individual de produto, carrossel de imagens, seção sobre a loja e informações de contato. Estruturado para receber integração com backend futuramente.',
 
         features: [
             'Home completo',
@@ -163,6 +168,43 @@ export const projects = [
 
         linkProject: 'https://www.lamatahorto.com.br',
         linkGithub: 'https://github.com/matheuscrvlh/lamata-horto',
+
+        techs: [
+            'React.js',
+            'TypeScript',
+            'TailwindCSS'
+        ]
+    },
+    {
+        id: 5,
+        type: 'FrontEnd',
+        status: 'Em produção',
+        featured: true,
+        year: 'Maio de 2026',
+
+        img: p4_1,
+        images: [p5_1, p5_2, p5_3],
+
+        title: 'Portfólio Ian Mello',
+
+        desc: 'Portfólio pessoal com foco em UI/UX, performance, HTML semântico e design responsivo para todas as telas.',
+        descCompleta: 'Portfólio pessoal desenvolvido para Ian Mello com ênfase em UI/UX, performance e acessibilidade. Conta com HTML semântico, otimização de SEO, animações fluidas e design totalmente responsivo para desktop e mobile. Construído com React.js, TypeScript e TailwindCSS.',
+
+        features: [
+            'Home completo',
+            'HTML Semântico',
+            'Otimização para performance',
+            'UI UX',
+            'Responsividade',
+        ],
+
+        challenges: [
+            'Responsividade para todas telas',
+            'Otimização em performance',
+        ],
+
+        linkProject: 'https://portfolio-ian-mello.vercel.app/',
+        linkGithub: 'https://github.com/matheuscrvlh/portfolio-ian-mello',
 
         techs: [
             'React.js',

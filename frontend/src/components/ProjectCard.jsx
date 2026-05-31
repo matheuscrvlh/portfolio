@@ -79,8 +79,8 @@ export default function ProjectCard({ img, images, type, status, year, title, de
                 <div className='absolute top-3 left-3 right-3 flex justify-between items-start z-10'>
                     {isLive ? (
                         <span className='flex items-center gap-1.5 bg-black/65 backdrop-blur-sm px-2.5 py-1 rounded-full'>
-                            <span className='w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse'/>
-                            <span className='text-green-400 text-xs font-semibold'>Em produção</span>
+                            <span className='w-1.5 h-1.5 rounded-full animate-pulse' style={{ backgroundColor: '#4ade80' }}/>
+                            <span className='text-xs font-semibold' style={{ color: '#4ade80' }}>Em produção</span>
                         </span>
                     ) : <span/>}
                     <span className='bg-blue-light2 px-3 py-1 rounded-full text-white text-xs font-bold shadow-[0_0_10px_rgba(130,24,216,0.5)]'>
@@ -93,7 +93,7 @@ export default function ProjectCard({ img, images, type, status, year, title, de
             <div className='flex flex-col flex-1 gap-3 p-5'>
                 <div>
                     <p className='text-white/35 text-xs mb-0.5'>{year}</p>
-                    <p className='font-bold text-xl leading-snug'>{title}</p>
+                    <p className='font-bold text-xl leading-snug text-white'>{title}</p>
                 </div>
 
                 <p className='text-white/60 text-sm leading-relaxed line-clamp-3 flex-1'>
@@ -139,7 +139,7 @@ export default function ProjectCard({ img, images, type, status, year, title, de
                     <button
                         onClick={onClick}
                         title='Ver detalhes'
-                        className='p-2 rounded-lg border border-white/10
+                        className='p-2 rounded-lg border border-white/10 text-white
                             hover:border-blue-light2/50 hover:text-blue-light hover:bg-blue-light2/10
                             transition-all duration-200 cursor-pointer'
                     >

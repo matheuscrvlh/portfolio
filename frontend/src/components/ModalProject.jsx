@@ -69,7 +69,7 @@ export default function ModalProject({
                         w-8 h-8 flex items-center justify-center rounded-full
                         bg-blue-base/85 backdrop-blur-sm border border-white/10
                         hover:bg-blue-light2 hover:border-blue-light2
-                        transition-colors duration-200 cursor-pointer
+                        transition-colors duration-200 cursor-pointer text-white
                     '
                 >
                     <X size={14}/>
@@ -126,8 +126,8 @@ export default function ModalProject({
                     <div className='absolute bottom-3 left-4 flex items-center gap-2 z-10'>
                         {isLive && (
                             <span className='flex items-center gap-1.5 bg-black/65 backdrop-blur-sm px-2.5 py-1 rounded-full'>
-                                <span className='w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse'/>
-                                <span className='text-green-400 text-xs font-semibold'>Em produção</span>
+                                <span className='w-1.5 h-1.5 rounded-full animate-pulse' style={{ backgroundColor: '#4ade80' }}/>
+                                <span className='text-xs font-semibold' style={{ color: '#4ade80' }}>Em produção</span>
                             </span>
                         )}
                         <span className='bg-blue-light2 px-3 py-1 rounded-full text-white text-xs font-bold'>
@@ -142,7 +142,7 @@ export default function ModalProject({
 
                         {/* Title + year */}
                         <div>
-                            <h2 className='text-2xl font-bold leading-tight md:text-3xl'>{title}</h2>
+                            <h2 className='text-2xl font-bold leading-tight md:text-3xl text-white'>{title}</h2>
                             <p className='text-white/35 text-xs mt-1'>Finalizado em {year}</p>
                         </div>
 
@@ -202,7 +202,7 @@ export default function ModalProject({
                                 rel='noopener noreferrer'
                                 className='
                                     flex-1 flex items-center justify-center gap-2
-                                    bg-blue-light2 py-3 rounded-xl font-semibold text-sm
+                                    bg-blue-light2 py-3 rounded-xl font-semibold text-sm text-white
                                     hover:bg-blue-light2/80 transition-colors duration-200
                                 '
                             >
