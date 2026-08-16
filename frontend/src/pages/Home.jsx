@@ -25,7 +25,6 @@ export default function Home() {
             <Main />
             <Stats />
             <AboutServices />
-            <Services />
             <AboutDev />
             <Skills />
             <Projects />
