@@ -19,14 +19,17 @@ export default function ModalProject({
     const allImages = images && images.length > 0 ? images : [img]
     const hasMultiple = allImages.length > 1
     const [current, setCurrent] = useState(0)
+    const [isPortrait, setIsPortrait] = useState(false)
 
     function prev(e) {
         e?.stopPropagation()
+        setIsPortrait(false)
         setCurrent(i => (i - 1 + allImages.length) % allImages.length)
     }
 
     function next(e) {
         e?.stopPropagation()
+        setIsPortrait(false)
         setCurrent(i => (i + 1) % allImages.length)
     }
 
@@ -80,7 +83,10 @@ export default function ModalProject({
                     <img
                         src={allImages[current]}
                         alt={`${title} - imagem ${current + 1}`}
-                        className='w-full h-full object-cover object-top transition-all duration-400'
+                        onLoad={e => setIsPortrait(e.target.naturalHeight > e.target.naturalWidth)}
+                        className={`w-full h-full transition-all duration-400 ${
+                            isPortrait ? 'object-contain' : 'object-cover object-top'
+                        }`}
                     />
                     <div className='absolute inset-0 bg-linear-to-t from-blue-dark/80 via-transparent to-transparent'/>
 
@@ -113,7 +119,7 @@ export default function ModalProject({
                                 {allImages.map((_, i) => (
                                     <button
                                         key={i}
-                                        onClick={e => { e.stopPropagation(); setCurrent(i) }}
+                                        onClick={e => { e.stopPropagation(); setIsPortrait(false); setCurrent(i) }}
                                         className={`rounded-full transition-all duration-250 cursor-pointer
                                             ${i === current ? 'w-5 h-1.5 bg-white' : 'w-1.5 h-1.5 bg-white/40 hover:bg-white/70'}`}
                                     />
